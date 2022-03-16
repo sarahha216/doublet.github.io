@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Giáo Trình Chủ Nghĩa Xã Hội Khoa Học (Tái bản có sửa chữa, bổ sung) / New</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/trangsanpham.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dangnhap_dangky.css">
+    <script type="text/javascript" src="../../javascript/app.js"></script>
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="../../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="zheader">
+        <div class="wapper">
+            <div class="header">
+                <div id="menu">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn fas fa-bars fa-2x"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="../sachmoi/sachmoi.html">Sách mới</a>
+                            <a href="../sachgiaokhoa/sachgiaokhoa.html">Sách giáo khoa</a>
+                            <a href="../ngoaingu/ngoaingu.html">Sách ngoại ngữ</a>
+                            <a href="../vanhoc/vanhoc.html">Sách văn học</a>
+                            <a href="../kynangsong/kynangsong.html">Kỹ năng sống</a>
+                            <a href="../truyentranh/truyentranh.html">Truyện tranh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <form action="" method="">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    </form>
+                </div>
+                <div class="isearch">
+                    <a href=""><i class="fas fa-search"></i></a>
+                </div>
+                <div id="logo">
+                    <a href="../index.html">
+                        <img src="../../pic/logo/logo.png" width="200px" height="200px">
+                    </a>
+                </div>
+
+                <!--đăng nhập, đăng ký-->
+                <div class="hopUser">
+                    <div id="myUser" class="myUser"><i class="far fa-user fa-2x"></i></div>
+                    <div id="myModal" class="hopthoai">
+                        <div class="modalCnt">
+                        <span class="close">&times;</span>
+                            <div class="container" id="container">
+                                <div class="form-container sign-up-container">
+                                    <form action="#">
+                                        <h1>Tạo tài khoản</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng email của bạn để đăng ký</span>
+                                        <input type="text" placeholder="Tên" />
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <button>Sign Up</button>
+                                    </form>
+                                </div>
+                                <div class="form-container sign-in-container">
+                                    <form action="#">
+                                        <h1>Đăng nhập</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng tài khoản của bạn</span>
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <a href="#">Bạn quên mật khẩu?</a>
+                                        <button>Đăng nhập</button>
+                                    </form>
+                                </div>
+                                <div class="overlay-container">
+                                    <div class="overlay">
+                                        <div class="overlay-panel overlay-left">
+                                            <h1>Đăng nhập</h1>
+                                            <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signIn">Đăng nhập</button>
+                                        </div>
+                                        <div class="overlay-panel overlay-right">
+                                            <h1>Đăng ký</h1>
+                                            <p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signUp">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="../../javascript/signIn_signUp.js"></script>
+                <!-- MUA -->
+                <div id="buy">
+                    <a href="">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zmain">
+        <div class="wapper">
+            <div class="main">
+                <div class="noidungtrang">
+                    <div class="linktrang">
+                        <ul>
+                            <li><a class="linktrang1" href="../index.html">Trang chủ</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1" href="./sachgiaokhoa.html">Sách Giáo Khoa</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1" href="./giaotrinh.html">Giáo Trình</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1 chonthe" href="#">Giáo Trình Chủ Nghĩa Xã Hội Khoa Học (Tái bản có sửa chữa, bổ sung) / New</a></li>
+                        </ul>
+                    </div><br>
+                    <div class="hinh1">
+                        <div class="hinh">
+                            <img src="../../pic/sachgiaokhoa/chunghiaxhkh-1.jpg" alt="">
+                        </div>
+                        <div class="nd1">
+                            <div class="tsach">Giáo Trình Chủ Nghĩa Xã Hội Khoa Học (Tái bản có sửa chữa, bổ sung) / New</div>
+                            <!--gia sach-->
+                            <div class="left ">
+                                <br>
+                                <div class="gsach">
+                                    <span class="giaban">125.000 <span class="dong">đ</span></span>
+                                    <span class="gsachgoc">125.000 <span class="dong">đ</span></span>
+                                    <span class="giamgia">8%</span>
+                                </div>
+        
+                                <div class="ghang">
+                                    <p>Bạn hãy <a href="#"> NHẬP ĐỊA CHỈ</a> nhận hàng để được dự báo thời gian & chi
+                                        phí giao hàng một cách chính xác nhất</p>
+                                </div> <br>
+        
+                                <div>Số lượng:</div>
+                                <div class="input-group">
+                                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                                </div>
+                                <script src="../../javascript/hop_so_luong.js"></script>
+                                <input class="buy" type="button" name="buy" value="Chọn mua">
+                            </div>
+                            <!--cam ket -->
+                            <div class="left">
+                                <div class="b1">
+                                    <div class="b2">
+                                        <p>Cam kết chính hiệu bởi</p>
+                                        <div class="block">
+                                            <div class="left">
+                                                <img src="../../pic/logo/favilogo.png" class="logob">
+                                            </div>
+                                            <div class="left">
+                                                <a href="#" class="b4">DOUBLE T</a>
+                                                <a href="#" class="b5">Xem shop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b3">
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/compensation.svg">
+                                            Hoàn tiền <br> 111% <br> nếu giả
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/guarantee.svg">
+                                            Mở hộp <br> kiểm tra <br> nhận hàng
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/refund.svg">
+                                            Đổi trả trong <br> 30 ngày <br> nếu sp lỗi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--noi dung sach-->
+                <div class="noidung">
+                    <!--bentrai-->
+                    <div class="bentrai">
+                        <!-- info sach-->
+                        <div class="info3">
+                            <h2>Thông tin chi tiết</h2>
+                            <div class="info4">
+                                <table>
+                                    <tr>
+                                        <td class="info1">Nhà sản xuất</td>
+                                        <td class="info2">Nhà Xuất Bản Chính Trị Quốc Gia Sự Thật</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Ngày sản xuất</td>
+                                        <td> 10-2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Kích thước</td>
+                                        <td class="info2"> 	17 x 24 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Loại Bìa</td>
+                                        <td>Bìa mềm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Số trang</td>
+                                        <td class="info2">560</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div> <br>
+                        <!--Mo ta san pham-->
+                        <div class="mt-sach">
+                            <h2>Mô tả sản phẩm</h2>
+                            <div class="mt-sach1">
+                                <div class="block_mt">
+                                    <div class="mt-sach2">
+                                        <h4>Giáo Trình Chủ Nghĩa Xã Hội Khoa Học (Tái bản có sửa chữa, bổ sung) / New</h4>
+                                        <p class="js-excerpt excerpt-hidden">
+                                        Giáo Trình Chủ Nghĩa Xã Hội Khoa Học (Tái bản có sửa chữa, bổ sung) <br><br>
+                                            Để giúp việc nghiên cứu, giảng dạy và học tập môn Chủ Nghĩa Xã Hội Khoa Học 
+                                            một cách có hệ thống trên cơ sở đổi mới cả về cách tiếp cận và phân tích lý luận cũng như cố gắng cập nhật với thực tiễn của thời đại, dưới 
+                                            sự chỉ đạo của Hội Đồng Trung ương chỉ đạo biên soạn giáo trình quốc gia các bộ môn khoa học Mác - Lênnin, tư tưởng Hồ Chí Minh, Ban biên soạn 
+                                            giáo trình chủ nghĩa xã hội khoa học gồm các nhà khoa học đầu đàn trên lĩnh vực này, do GS. TS Đỗ Nguyên Phương chủ biên, đã hoàn thành việc biên 
+                                            soạn Chủ Nghĩa Xã Hội Khoa Học. <br><br>
+                                        Giáo trình gồm 16 chương, được biên soạn công phu, trình bày logic hợp lý, các nội dung đảm bảo tính khoa học và được cân nhắc thận trọng. Giáo trình 
+                                            này được coi là cái "khung" cơ bản và cơ sở khoa học để các cơ sở đào tạo và các trường biên soạn chương trình giảng dạy và học tập môn "Chủ Nghĩa Xã 
+                                            Hội Khoa Học" cho phù hợp với đối tượng và thời gian học tập cụ thể. <br><br>
+                                         Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc phương thức, địa chỉ giao hàng mà 
+                                            có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, ... 
+                                        </p>
+                                    </div>
+                                    <a role="button" href="#" class="js-show-more">Xem Thêm Nội Dung</a>
+                                    <script src="../../javascript/show_hide.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benphai">
+                        <img src="../../pic/banner/quangcao.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+					<div class="box-wapper">
+                        <div class="khamphathem">
+                            <img src="../../pic/frontend/kham_pha_them.png" alt="" width="194px" height="24px">
+                        </div>
+						<div class="col-item">
+							<div class="row-item">
+                                <div class="row1">
+                                    <a href="./daoduc5.html" title="Đạo Đức Lớp 5">
+                                        <img src="../../pic/sachgiaokhoa/daoduc5.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./daoduc5.html" title="Đạo Đức Lớp 5">Đạo Đức Lớp 5</a>
+                                </div>
+                                <div class="row3">
+                                    <p>3.800đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./tienganh1.html" title="I-Learn Smart Start 1 - Sách Giáo Khoa Tiếng Anh Lớp 1">
+                                        <img src="../../pic/sachgiaokhoa/tienganh1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./tienganh1.html" title="I-Learn Smart Start 1 - Sách Giáo Khoa Tiếng Anh Lớp 1">I-Learn Smart Start 1 - Sách Giáo Khoa Tiếng Anh Lớp 1</a>
+                                </div>
+                                <div class="row3">
+                                    <p>74.100đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./tapbandodialy7.html" title="Tập Bản Đồ Địa Lí 7 (2020)">
+                                        <img src="../../pic/sachgiaokhoa/tapbandodialy7.jpg">
+                                    </a>
+                                    <div class="percent-deal">5%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="./tapbandodialy7.html" title="Tập Bản Đồ Địa Lí 7 (2020)">Tập Bản Đồ Địa Lí 7 (2020)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>27.550đ
+                                        <span class="original-deal">29.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+							<div class="row-item">
+                                <div class="row1">
+                                    <a href="./vatly9.html" title="Vật Lí 9 (Song Ngữ Việt - Anh)">
+                                        <img src="../../pic/sachgiaokhoa/vatly9.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./vatly9.html" title="Vật Lí 9 (Song Ngữ Việt - Anh)">Vật Lí 9 (Song Ngữ Việt - Anh)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>49.400đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-item">
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./tuduyphaply.html" title="Giáo Trình Tư Duy Pháp Lý">
+                                        <img src="../../pic/sachgiaokhoa/tuduyphaply-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./tuduyphaply.html" title="Giáo Trình Tư Duy Pháp Lý">Giáo Trình Tư Duy Pháp Lý</a>
+                                </div>
+                                <div class="row3">
+                                    <p>99.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./toanroirac.html" title="Toán Rời Rạc Ứng Dụng Trong Tin Học">
+                                        <img src="../../pic/sachgiaokhoa/toanroirac-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./toanroirac.html" title="Toán Rời Rạc Ứng Dụng Trong Tin Học">Toán Rời Rạc Ứng Dụng Trong Tin Học</a>
+                                </div>
+                                <div class="row3">
+                                    <p>98.980đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./toancaocap3.html" title="Toán Học Cao Cấp - Tập 3: Chuỗi Và Phương Trình Vi Phân">
+                                        <img src="../../pic/sachgiaokhoa/toancaocap3-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./toancaocap3.html" title="Toán Học Cao Cấp - Tập 3: Chuỗi Và Phương Trình Vi Phân">Toán Học Cao Cấp - Tập 3: Chuỗi Và Phương Trình Vi Phân</a>
+                                </div>
+                                <div class="row3">
+                                    <p>62.500đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./ngonnguhoctv.html" title="Cơ Sở Ngôn Ngữ Học Và Tiếng Việt">
+                                        <img src="../../pic/sachgiaokhoa/ngonnguhoctv-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./ngonnguhoctv.html" title="Cơ Sở Ngôn Ngữ Học Và Tiếng Việt">Cơ Sở Ngôn Ngữ Học Và Tiếng Việt</a>
+                                </div>
+                                <div class="row3">
+                                    <p>58.800đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+						<div class="center-view-more">
+							<a href="./sachgiaokhoa.html" class="view-more">Xem thêm</a>
+						</div>
+                    </div>
+				</div>
+            </div>
+        </div>
+        <button id="myScroll" title="Go to top">&#11165;</button>
+        <script type="text/javascript" src="../../javascript/scroll_to_top.js"></script>
+        
+        <div class="znewsletter">
+            <div class="wrapper_newsletter">
+                <div class="newsletter">
+                    <div class="newsletter-icon">
+                        <img src="../../pic/frontend/thanhtoan/newsletter.svg" width="163px" alt="">
+                    </div>
+                    <div class="newsletter-desdription">
+                        <h3>Đăng ký nhận bản tin DoubleT</h3>
+                        <h5>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h5>
+                    </div>
+                    <div class="newsletter-form">
+                        <input class="youremail" type="email" placeholder="Địa chỉ email của bạn" value="">
+                        <input class="dangkyemail" type="button" onclick="In()" value="Đăng ký">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="zfooter">
+            <div class="wapper">
+                <div class="footer">
+                    <div class="foo">
+                        <div class="foo-item foo-item1">
+                            <div class="pad-fooitem1">
+                                <div class="flogo">
+                                    <div class="llogo">
+                                        <img src="../../pic/logo/favilogo.png" alt="">
+                                    </div>
+                                    <div class="rlogo">Công ty Cổ phần DoubleT Bookstore
+                                    </div>
+                                </div>
+                                <span><h4>THÔNG TIN LIÊN LẠC</h4></span>
+                                <p>
+                                    <i class="fas fa-home"></i> 828 Sư Vạn Hạnh, Q10, TPHCM.
+                                    <span><i class="fas fa-envelope"></i> doublet@gmail.com</span>
+                                    <i class="fas fa-phone"></i> 0934048758
+                                    <span><i class="fas fa-phone"></i> 0384410932</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item2">
+                            <div class="pad-fooitem2">
+                                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                                <p>
+                                    <img src="../../pic/frontend/thanhtoan/visa.svg">
+                                    <img src="../../pic/frontend/thanhtoan/mastercard.svg">
+                                    <img src="../../pic/frontend/thanhtoan/jcb.svg">
+                                    <span><img src="../../pic/frontend/thanhtoan/cash.svg">
+                                    <img src="../../pic/frontend/thanhtoan/internet-banking.svg">
+                                    <img src="../../pic/frontend/thanhtoan/installment.svg"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item3">
+                            <div class="pad-fooitem3">
+                                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                                <p>
+                                    <a href="">
+                                        <i class="fab fa-facebook fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-instagram fa-3x color-ig"></i>
+                                    </a>
+                                </p>
+                                <h4>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</h4>
+                                <p>
+                                    <img src="../../pic/ungdung/appstore.png" width="140px">
+                                    <span><img src="../../pic/ungdung/playstore.png" width="140px"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zcopy">
+            <div class="wapper">
+                <div class="copy" id="fcopy">© 2020 Copyright:
+                    <a href="./index.html">DoubleT.com</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

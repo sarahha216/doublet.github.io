@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thay Đổi Cuộc Sống Với Nhân Số Học</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/trangsanpham.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dangnhap_dangky.css">
+    <script type="text/javascript" src="../../javascript/app.js"></script>
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="../../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="zheader">
+        <div class="wapper">
+            <div class="header">
+                <div id="menu">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn fas fa-bars fa-2x"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="../sachmoi/sachmoi.html">Sách mới</a>
+                            <a href="../sachgiaokhoa/sachgiaokhoa.html">Sách giáo khoa</a>
+                            <a href="../ngoaingu/ngoaingu.html">Sách ngoại ngữ</a>
+                            <a href="../vanhoc/vanhoc.html">Sách văn học</a>
+                            <a href="../kynangsong/kynangsong.html">Kỹ năng sống</a>
+                            <a href="../truyentranh/truyentranh.html">Truyện tranh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <form action="" method="">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    </form>
+                </div>
+                <div class="isearch">
+                    <a href=""><i class="fas fa-search"></i></a>
+                </div>
+                <div id="logo">
+                    <a href="../index.html">
+                        <img src="../../pic/logo/logo.png" width="200px" height="200px">
+                    </a>
+                </div>
+
+                <!--đăng nhập, đăng ký-->
+                <div class="hopUser">
+                    <div id="myUser" class="myUser"><i class="far fa-user fa-2x"></i></div>
+                    <div id="myModal" class="hopthoai">
+                        <div class="modalCnt">
+                        <span class="close">&times;</span>
+                            <div class="container" id="container">
+                                <div class="form-container sign-up-container">
+                                    <form action="#">
+                                        <h1>Tạo tài khoản</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng email của bạn để đăng ký</span>
+                                        <input type="text" placeholder="Tên" />
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <button>Sign Up</button>
+                                    </form>
+                                </div>
+                                <div class="form-container sign-in-container">
+                                    <form action="#">
+                                        <h1>Đăng nhập</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng tài khoản của bạn</span>
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <a href="#">Bạn quên mật khẩu?</a>
+                                        <button>Đăng nhập</button>
+                                    </form>
+                                </div>
+                                <div class="overlay-container">
+                                    <div class="overlay">
+                                        <div class="overlay-panel overlay-left">
+                                            <h1>Đăng nhập</h1>
+                                            <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signIn">Đăng nhập</button>
+                                        </div>
+                                        <div class="overlay-panel overlay-right">
+                                            <h1>Đăng ký</h1>
+                                            <p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signUp">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="../../javascript/signIn_signUp.js"></script>
+
+                <div id="buy">
+                    <a href="">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zmain">
+        <div class="wapper">
+            <div class="main">
+                <div class="noidungtrang">
+                    <div class="linktrang">
+                        <ul>
+                            <li><a class="linktrang1" href="../index.html">Trang chủ</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1" href="./kynangsong.html">Kỹ năng sống</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1 chonthe" href="./NhanSoHoc.html">Thay Đổi Cuộc Sống Với Nhân Số Học</a></li>
+                        </ul>
+                    </div><br>
+                    <div class="hinh1">
+                        <div class="hinh">
+                            <img src="../../pic/kynangsong/thaydoicuocsongvoinhansohoc.jpg" alt="">
+                        </div>
+                        <div class="nd1">
+                            <div class="tsach">Thay Đổi Cuộc Sống Với Nhân Số Học / NEW</div>
+                            <!--gia sach-->
+                            <div class="left ">
+                                <br>
+                                <div class="gsach">
+                                    <span class="giaban">235.500 <span class="dong">đ</span></span>
+                                    <span class="gsachgoc">248.000 <span class="dong">đ</span></span>
+                                    <span class="giamgia">5%</span>
+                                </div>
+        
+                                <div class="ghang">
+                                    <p>Bạn hãy <a href="#"> NHẬP ĐỊA CHỈ</a> nhận hàng để được dự báo thời gian & chi
+                                        phí giao hàng một cách chính xác nhất</p>
+                                </div> <br>
+        
+                                <div>Số lượng:</div>
+                                <div class="input-group">
+                                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                                </div>
+                                <script src="../../javascript/hop_so_luong.js"></script>
+                                <input class="buy" type="button" name="buy" value="Chọn mua">
+                            </div>
+                            <!--cam ket -->
+                            <div class="left">
+                                <div class="b1">
+                                    <div class="b2">
+                                        <p>Cam kết chính hiệu bởi</p>
+                                        <div class="block">
+                                            <div class="left">
+                                                <img src="../../pic/logo/favilogo.png" class="logob">
+                                            </div>
+                                            <div class="left">
+                                                <a href="#" class="b4">DOUBLE T</a>
+                                                <a href="#" class="b5">Xem shop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b3">
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/compensation.svg">
+                                            Hoàn tiền <br> 111% <br> nếu giả
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/guarantee.svg">
+                                            Mở hộp <br> kiểm tra <br> nhận hàng
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/refund.svg">
+                                            Đổi trả trong <br> 30 ngày <br> nếu sp lỗi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--noi dung sach-->
+                <div class="noidung">
+                    <!--bentrai-->
+                    <div class="bentrai">
+                        <!-- info sach-->
+                        <div class="info3">
+                            <h2>Thông tin chi tiết</h2>
+                            <div class="info4">
+                                <table>
+                                    <tr>
+                                        <td class="info1">Nhà sản xuất</td>
+                                        <td class="info2"> First News - Trí Việt</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Ngày sản xuất</td>
+                                        <td> 10-2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Kích thước</td>
+                                        <td class="info2"> 16 x 24 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Tác giả</td>
+                                        <td>Lê Đỗ Quỳnh Hương</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Số trang</td>
+                                        <td class="info2">342</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div> <br>
+                        <!--Mo ta san pham-->
+                        <div class="mt-sach">
+                            <h2>Mô tả sản phẩm</h2>
+                            <div class="mt-sach1">
+                                <div class="block_mt">
+                                    <div class="mt-sach2">
+                                        <h4>Thay Đổi Cuộc Sống Với Nhân Số Học</h4>
+                                        <p class="js-excerpt excerpt-hidden">
+                                            Cuốn sách Thay đổi cuộc sống với Nhân số học là tác phẩm được chị Lê Đỗ Quỳnh Hương phát
+                                            triển từ tác phẩm gốc “The Complete Book of Numerology” của tiến sỹ David A. Phillips,
+                                            khiến bộ môn Nhân số học khởi nguồn từ nhà toán học Pythagoras trở nên gần gũi, dễ hiểu
+                                            hơn với độc giả Việt Nam.
+                                            <br/><br/>
+                                            Đầu năm 2020, chuỗi chương trình “Thay đổi cuộc sống với Nhân số học” của biên tập viên,
+                                            người dẫn chương trình quen thuộc tại Việt Nam Lê Đỗ Quỳnh Hương ra đời trên Youtube,
+                                            với mục đích chia sẻ kiến thức, giúp mọi người tìm hiểu và phát triển, hoàn thiện bản
+                                            thân, các mối quan hệ xã hội thông qua bộ môn Nhân số học. Chương trình đã nhận được sự
+                                            yêu mến và phản hồi tích cực của rất nhiều khán giả và độc giả sau mỗi tập phát sóng.
+                                            <br/><br/>
+
+                                            Nhân số học là một môn nghiên cứu sự tương quan giữa những con số trong ngày sinh, cái tên 
+                                            với cuộc sống, vận mệnh, đường đời và tính cách của mỗi người. Bộ môn này đã được nhà 
+                                            toán học Pythagoras khởi xướng cách đây 2.600 năm và sau này được nhiều thế hệ học trò 
+                                            liên tục kế thừa, phát triển.
+                                            <br/><br/>
+                                            Có thể xem, Nhân số học là một bộ môn Khám phá Bản thân (Self-Discovery), đọc vị về số. 
+                                            Bộ môn này giúp giải mã những tín hiệu mà cuộc sống đã gửi đến từng cá thể con người 
+                                            trong đời sống, tương tự như Nhân tướng học hay Nhân trắc học… Khi nghiêm túc nghiên cứu 
+                                            sự tồn tại và mối tương quan giữa các con số xuất hiện trong ngày, tháng, năm sinh của 
+                                            mỗi người qua Nhân số học, ta có thể hiểu được khá nhiều về bản thân mình, cũng như mối 
+                                            quan hệ của mình với người khác. Nếu hiểu những "mật mã" nằm ẩn dưới những con số, chúng ta 
+                                            có thể kiểm soát cuộc sống của mình, điều chỉnh chúng theo hướng ngày càng tốt đẹp hơn, 
+                                            phù hợp với năng lực, tính cách của mình hơn.
+                                            <br/><br/>
+                                        
+                                            Trong quyển sách “Thay đổi cuộc sống với Nhân số học”, Lê Đỗ Quỳnh Hương đã sử dụng khoảng 60% 
+                                            nền tảng tri thức từ quyển sách “The Complete Book of Numerology” (tạm dịch: Một quyển sách 
+                                            toàn diện về Nhân số học) của Tiến sĩ David A. Phillips (1934 – 1993) và 40% kết quả nghiên cứu 
+                                            của chị sau khi phân tích hơn 500 trường hợp cụ thể của những người Việt Nam sinh ra trong thế kỷ 21.
+                                            <br/><br/>
+                                        
+                                            Cuốn sách “Thay đổi cuộc sống với Nhân số học”mang lại đầy đủ những kiến thức quan trọng nhất 
+                                            mà người hứng thú với Nhân số học cần tìm hiểu. Sách bao gồm các kiến thức về ba thể trong một 
+                                            con người, con số chủ đạo, biểu đồ ngày sinh, các mũi tên chỉ đặc điểm, con số ngày sinh, chu kỳ 
+                                            9 năm, ba giai đoạn và bốn đỉnh cao của đời người cùng ý nghĩa, sức mạnh của cái tên của mỗi người. 
+                                            Các kiến thức này được diễn giải, phân tích và đi kèm các ví dụ cụ thể.
+                                            <br/><br/>
+                                            
+                                            Với mục đích đem Nhân số học trở nên gần gũi, dễ ứng dụng và mang lại những giá trị tích cực 
+                                            cho mỗi người trong đời sống, chị Lê Đỗ Quỳnh Hương mong rằng trong hành trình khám phá bản thân 
+                                            qua những con số, người đọc có thể hiểu về mình - hiểu được những thuận lợi và bất lợi mà mình 
+                                            gặp phải, từ đó tìm được động lực lớn để thay đổi cuộc sống. Giá trị của cuốn sách “Thay đổi 
+                                            cuộc sống với Nhân số học” nằm ở kiến thức tổng quan về Nhân số học và những lời khuyên sâu sắc 
+                                            để mỗi người có thể chuyển mình theo những hướng tích cực hơn như sống có lý tưởng, mở lòng, 
+                                            chăm chỉ, biết lắng nghe người khác, luyện tập thiền định, tập trung, sống có trách nhiệm, 
+                                            biết ơn và yêu thương…
+                                            <br/><br/>
+                                        
+                                            Trong cuộc đời của mỗi con người, chúng ta thường phải mày mò, tìm kiếm con đường riêng 
+                                            cho mình mà không biết chắc con đường đó có phù hợp với mình hay không. Đôi lúc, chúng ta 
+                                            phải trầy trật, vấp ngã thậm chí lạc lối mới rút ra được kinh nghiệm, bài học. Nếu hiểu 
+                                            về Nhân số học, và thông qua những kiến thức nhất định về ý nghĩa và sự kết hợp của các con số, 
+                                            chúng ta có thể tự vạch ra cho mình một hướng đi tương đối cụ thể, giảm thiểu được các lần 
+                                            “thử và sai”, từ đó tìm được nhiều niềm vui, hạnh phúc, ý nghĩa trong cuộc sống.<br/>
+                                            Đó chính là thông điệp và mục đích lớn nhất mà tiến sỹ David A. Phillips và tác giả 
+                                            Lê Đỗ Quỳnh Hương mong muốn gửi gắm cho đông đảo bạn đọc.
+                                            <br/><br/>
+
+                                            <span class="tieude">VỀ TÁC GIẢ</span>
+                                            <br/><br/>
+                                            DAVID A. PHILLIPS, tiến sĩ triết học tại Đại học London năm 1971, nhưng sau đó lại được biết 
+                                            đến như một chuyên gia trong lĩnh vực sức khỏe và dinh dưỡng. Lúc sinh thời, ông cũng thường 
+                                            đến các nước nói tiếng Anh trên thế giới để giảng dạy và diễn thuyết, tư vấn về Nhân số học, 
+                                            cống hiến sự nghiên cứu cả đời mình về lĩnh vực sức khỏe và phát triển cá nhân cho việc giảng dạy. 
+                                            Tiến sĩ A.Phillips viết tổng cộng 12 quyển sách, trong đó, nổi tiếng và được yêu thích 
+                                            rộng rãi nhất là cuốn The Complete Book of Numerology (Một quyển sách toàn diện về Nhân Số Học).
+                                            <br/><br/>
+
+                                            Lê Đỗ Quỳnh Hương, thạc sĩ Âm nhạc học tại Nhạc viện TP. HCM, là một biên tập viên, 
+                                            người dẫn chương trình quen thuộc tại Việt Nam, cũng là một cây bút với nhiều quyển sách về chủ đề 
+                                            sống tích cực được nhiều người yêu thích. Lần đầu tiên bén duyên với lĩnh vực Nhân số học, chị 
+                                            cùng các đồng sự đã tìm hiểu, nghiên cứu dựa trên nền tảng cuốn “The Complete Book of Numerology” 
+                                            để cho ra đời tác phẩm “Thay đổi cuộc sống với Nhân số học”, một quyển sách giúp bản thân mỗi người 
+                                            hiểu rõ mình hơn và qua đó, có những thay đổi trong cách sống, cách suy nghĩ, hành độ hướng tới 
+                                            cuộc sống vui vẻ, hạnh phúc, an lạc hơn.
+                                            <br/><br/>
+
+                                            <span class="tieude">NGƯỜI NỔI TIẾNG NÓI GÌ VỀ CUỐN SÁCH</span>
+                                            <br/><br/>
+
+                                            “Từ khi tìm hiểu Nhân số học và biết được con số chủ đạo của mình là số 3, tôi thấy vừa 
+                                            bất ngờ vừa thú vị. Phần nói về tính cách của người có con số chủ đạo 3 quá chính xác, 
+                                            gần như hoàn toàn đúng đối với tôi.”- Ca sĩ Đàm Vĩnh Hưng.
+                                            <br/><br/>
+
+                                            Trước đây, tôi thường oán giận tại sao mình cũng có năng lực nhưng lại không chạm đến được 
+                                            những điều mình mong muốn. Rồi tôi nhận ra do trước đây tôi đã đặt cái tôi của mình quá cao 
+                                            trong mọi chuyện, trải qua nhiều biến cố nhưng vẫn không rút ra được bài học gì cho bản thân. 
+                                            Mãi đến khi biết đến Nhân số học, tôi có cơ hội dám nhìn lại toàn diện bức tranh cuộc đời mình. 
+                                            Khi ý thức được mình là người có nhiều số 1 và số 7 trong Biểu đồ ngày sinh, tôi bắt đầu 
+                                            nhìn nhận sự việc khác đi, nghiệm lại và dần dần tự điều chỉnh bản thân. Và tới bây giờ, 
+                                            tôi đang có một cuộc sống với năng lượng rất tích cực.”- Nhạc sĩ Phương Uyên.
+                                            <br/><br/>
+
+                                            “Trước đây, tôi từng rất dễ bị ảnh hưởng bởi cảm xúc của mọi người xung quanh. 
+                                            Nhưng tôi của bây giờ đã khác. Nhân số học như một công cụ giúp tôi quán chiếu lại cuộc sống 
+                                            của mình, giúp tôi mỗi ngày luôn hướng về những điều tích cực. Cảm ơn chị Quỳnh Hương đã 
+                                            cất công tìm hiểu, cấu trúc lại Nhân số học và lan tỏa giá trị đến mọi người.”- 
+                                            Nhà nhiếp ảnh Tâm Bùi
+                                            <br/><br/>
+
+                                            “Tôi là con trai một, được ba mẹ cưng chiều nên rất ham chơi. Tôi sa vào những cuộc nhậu nhẹt, 
+                                            đàn đúm, cá độ, đánh nhau. Cuộc sống bết bát của tôi đã khiến ba tôi ngày càng phiền muộn, 
+                                            ngay cả vào những ngày cuối đời của ông trên giường bệnh. Nhờ mẹ, tôi biết đến cô Quỳnh Hương 
+                                            và Nhân số học, và nhờ Nhân số học, cuộc sống của tôi bắt đầu thay đổi. Tôi hiểu về ‘mảnh đất’ 
+                                            mà Vũ trụ giao cho tôi, và tôi chọn sống khác đi. Tôi thực hiện thiền biết ơn mỗi ngày, gửi 
+                                            yêu thương đến mọi thứ xung quanh, bắt đầu một công việc mới, theo đúng sứ mệnh của một người 
+                                            có con số chủ đạo 6 và có đỉnh cao số 9. Cảm ơn Nhân số học, cô Quỳnh Hương và mẹ đã gieo duyên 
+                                            cho con. Biết ơn về tất cả!”- Lâm Quang Thịnh - Người được thay đổi nhờ Nhân số học
+                                            <br/><br/>
+
+                                            Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm 
+                                            hoặc phương thức, địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, 
+                                            phụ phí hàng cồng kềnh, ...
+                                        </p>
+                                    </div>
+                                    <a role="button" href="#" class="js-show-more">Xem Thêm Nội Dung</a>
+                                    <script src="../../javascript/show_hide.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benphai">
+                        <img src="../../pic/banner/quangcao.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+					<div class="box-wapper">
+                        <div class="khamphathem">
+                            <img src="../../pic/frontend/kham_pha_them.png" alt="" width="194px" height="24px">
+                        </div>
+						<div class="col-item">
+							<div class="row-item">
+								<div class="row1">
+									<a href="./5NgonNguTinhYeu.html" title="5 Ngôn Ngữ Tình yêu (Tái Bản)">
+										<img src="../../pic/kynangsong/5love-1.jpg">
+									</a>
+									<div class="percent-deal">19%</div>
+								</div>
+								<div class="row2">
+									<a href="./5NgonNguTinhYeu.html" title="5 Ngôn Ngữ Tình yêu (Tái Bản)">5 Ngôn Ngữ Tình yêu (Tái Bản)</a>
+								</div>
+								<div class="row3">
+									<p>62.900đ
+										<span class="original-deal">78.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./101DieuTruongHoc.html" title="101 Điều Trường Học Chưa Bao Giờ Dạy Bạn">
+										<img src="../../pic/kynangsong/101-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./101DieuTruongHoc.html" title="101 Điều Trường Học Chưa Bao Giờ Dạy Bạn">101 Điều Trường Học Chưa Bao Giờ Dạy Bạn</a>
+								</div>
+								<div class="row3">
+									<p>82.100đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./BanDatGiaBaoNhieu.html" title="Bạn Đắt Giá Bao Nhiêu?">
+										<img src="../../pic/kynangsong/bandatgia-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./BanDatGiaBaoNhieu.html" title="Bạn Đắt Giá Bao Nhiêu?">Bạn Đắt Giá Bao Nhiêu?</a>
+								</div>
+								<div class="row3">
+									<p>62.400đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./dacnhantam.html" title="Đắc Nhân Tâm (Bìa Cứng) - Tái Bản">
+									<img src="../../pic/kynangsong/dacnhantam-1.jpg">
+									</a>
+									<div class="percent-deal">32%</div>
+								</div>
+								<div class="row2">
+									<a href="./dacnhantam.html" title="Đắc Nhân Tâm (Bìa Cứng) - Tái Bản">Đắc Nhân Tâm (Bìa Cứng) - Tái Bản</a>
+								</div>
+								<div class="row3">
+									<p>66.900đ
+										<span class="original-deal">98.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+                        </div>
+                        <div class="col-item">
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./damuocmo.html" title="Dám Mơ Lớn, Đừng Hoài Phí Tuổi Trẻ">
+                                        <img src="../../pic/kynangsong/damuocmo-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./damuocmo.html" title="Dám Mơ Lớn, Đừng Hoài Phí Tuổi Trẻ">Dám Mơ Lớn, Đừng Hoài Phí Tuổi Trẻ</a>
+                                </div>
+                                <div class="row3">
+                                    <p>85.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./danong.html" title="Đàn Ông Sao Hỏa Đàn Bà Sao Kim">
+                                        <img src="../../pic/kynangsong/danong-1.jpg">
+                                    </a>
+                                    <div class="percent-deal">36%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="./danong.html" title="Đàn Ông Sao Hỏa Đàn Bà Sao Kim">Đàn Ông Sao Hỏa Đàn Bà Sao Kim</a>
+                                </div>
+                                <div class="row3">
+                                    <p>119.700đ
+                                        <span class="original-deal">188.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./dungluachon.html" title="Đừng Lựa Chọn An Nhàn Khi Còn Trẻ">
+                                        <img src="../../pic/kynangsong/dungluachon-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./dungluachon.html" title="Đừng Lựa Chọn An Nhàn Khi Còn Trẻ">Đừng Lựa Chọn An Nhàn Khi Còn Trẻ</a>
+                                </div>
+                                <div class="row3">
+                                    <p>56.600đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./kheoannoi.html" title="Khéo Ăn Nói Sẽ Có Được Thiên Hạ (Tái Bản)">
+                                        <img src="../../pic/kynangsong/kheoannoi-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./kheoannoi.html" title="Khéo Ăn Nói Sẽ Có Được Thiên Hạ (Tái Bản)">Khéo Ăn Nói Sẽ Có Được Thiên Hạ (Tái Bản)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>90.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+						<div class="center-view-more">
+							<a href="./kynangsong.html" class="view-more">Xem thêm</a>
+						</div>
+                    </div>
+				</div>
+            </div>
+        </div>
+        <button id="myScroll" title="Go to top">&#11165;</button>
+        <script type="text/javascript" src="../../javascript/scroll_to_top.js"></script>
+        
+        <div class="znewsletter">
+            <div class="wrapper_newsletter">
+                <div class="newsletter">
+                    <div class="newsletter-icon">
+                        <img src="../../pic/frontend/thanhtoan/newsletter.svg" width="163px" alt="">
+                    </div>
+                    <div class="newsletter-desdription">
+                        <h3>Đăng ký nhận bản tin DoubleT</h3>
+                        <h5>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h5>
+                    </div>
+                    <div class="newsletter-form">
+                        <input class="youremail" type="email" placeholder="Địa chỉ email của bạn" value="">
+                        <input class="dangkyemail" type="button" onclick="In()" value="Đăng ký">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="zfooter">
+            <div class="wapper">
+                <div class="footer">
+                    <div class="foo">
+                        <div class="foo-item foo-item1">
+                            <div class="pad-fooitem1">
+                                <div class="flogo">
+                                    <div class="llogo">
+                                        <img src="../../pic/logo/favilogo.png" alt="">
+                                    </div>
+                                    <div class="rlogo">Công ty Cổ phần DoubleT Bookstore
+                                    </div>
+                                </div>
+                                <span><h4>THÔNG TIN LIÊN LẠC</h4></span>
+                                <p>
+                                    <i class="fas fa-home"></i> 828 Sư Vạn Hạnh, Q10, TPHCM.
+                                    <span><i class="fas fa-envelope"></i> doublet@gmail.com</span>
+                                    <i class="fas fa-phone"></i> 0934048758
+                                    <span><i class="fas fa-phone"></i> 0384410932</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item2">
+                            <div class="pad-fooitem2">
+                                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                                <p>
+                                    <img src="../../pic/frontend/thanhtoan/visa.svg">
+                                    <img src="../../pic/frontend/thanhtoan/mastercard.svg">
+                                    <img src="../../pic/frontend/thanhtoan/jcb.svg">
+                                    <span><img src="../../pic/frontend/thanhtoan/cash.svg">
+                                    <img src="../../pic/frontend/thanhtoan/internet-banking.svg">
+                                    <img src="../../pic/frontend/thanhtoan/installment.svg"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item3">
+                            <div class="pad-fooitem3">
+                                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                                <p>
+                                    <a href="">
+                                        <i class="fab fa-facebook fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-instagram fa-3x color-ig"></i>
+                                    </a>
+                                </p>
+                                <h4>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</h4>
+                                <p>
+                                    <img src="../../pic/ungdung/appstore.png" width="140px">
+                                    <span><img src="../../pic/ungdung/playstore.png" width="140px"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zcopy">
+            <div class="wapper">
+                <div class="copy" id="fcopy">© 2020 Copyright:
+                    <a href="./index.html">DoubleT.com</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOUBLE T</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="../favicon_io/site.webmanifest">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/homepage.css">
+	<link rel="stylesheet" type="text/css" href="../css/dangnhap_dangky.css">
+	<script type="text/javascript" src="../javascript/app.js"></script>
+</head>
+<body>
+	<!--header-->
+	<div class="zheader">
+		<div class="wapper">
+			<div class="header">
+				<!--menu-->
+				<div id="menu">
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn fas fa-bars fa-2x"></button>
+						<div id="myDropdown" class="dropdown-content">
+							<a href="./sachmoi/sachmoi.html">Sách mới</a>
+							<a href="./sachgiaokhoa/sachgiaokhoa.html">Sách giáo khoa</a>
+							<a href="./ngoaingu/ngoaingu.html">Sách ngoại ngữ</a>
+							<a href="./vanhoc/vanhoc.html">Sách văn học</a>
+							<a href="./kynangsong/kynangsong.html">Kỹ năng sống</a>
+							<a href="./truyentranh/truyentranh.html">Truyện tranh</a>
+						</div>
+					</div>
+				</div>
+
+				<!--tìm kiếm-->
+				<div class="search">
+					<form action="" method="">
+						<input type="text" placeholder="Tìm kiếm sản phẩm">
+					</form>
+				</div>
+				<div class="isearch">
+					<a href=""><i class="fas fa-search"></i></a>
+				</div>
+				<div id="logo">
+					<a href="./index.html">
+						<img src="../pic/logo/logo.png" width="200px" height="200px">
+					</a>
+				</div>
+
+				<!--đăng nhập, đăng ký-->
+				<div class="hopUser">
+					<div id="myUser" class="myUser"><i class="far fa-user fa-2x"></i></div>
+					<div id="myModal" class="hopthoai">
+						<div class="modalCnt">
+						<span class="close">&times;</span>
+							<div class="container" id="container">
+								<div class="form-container sign-up-container">
+									<form action="#">
+										<h1>Tạo tài khoản</h1>
+										<div class="social-container">
+											<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+											<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+											<a href="#" class="social"><i class="fab fa-instagram"></i></a>
+										</div>
+										<span>hoặc sử dụng email của bạn để đăng ký</span>
+										<input type="text" placeholder="Tên" />
+										<input type="email" placeholder="Email" />
+										<input type="password" placeholder="Mật khẩu" />
+										<button>Sign Up</button>
+									</form>
+								</div>
+								<div class="form-container sign-in-container">
+									<form action="#">
+										<h1>Đăng nhập</h1>
+										<div class="social-container">
+											<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+											<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+											<a href="#" class="social"><i class="fab fa-instagram"></i></a>
+										</div>
+										<span>hoặc sử dụng tài khoản của bạn</span>
+										<input type="email" placeholder="Email" />
+										<input type="password" placeholder="Mật khẩu" />
+										<a href="#">Bạn quên mật khẩu?</a>
+										<button>Đăng nhập</button>
+									</form>
+								</div>
+								<div class="overlay-container">
+									<div class="overlay">
+										<div class="overlay-panel overlay-left">
+											<h1>Đăng nhập</h1>
+											<p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+											<button class="ghost" id="signIn">Đăng nhập</button>
+										</div>
+										<div class="overlay-panel overlay-right">
+											<h1>Đăng ký</h1>
+											<p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+											<button class="ghost" id="signUp">Đăng ký</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script src="../javascript/signIn_signUp.js"></script>
+
+				<!--giỏ hàng-->
+				<div id="buy">
+					<a href="">
+						<i class="fas fa-shopping-cart fa-2x"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--main-->
+	<div class="zmain">
+		<div class="wapper">
+			<div class="main">
+				<div class="banner">
+					<div class="slideshow-container">
+						<div class="slideshow-inner">
+							<div class="mySlides fade">
+								<a href="./vanhoc/phut89.html">
+								<img  src='../pic/banner/Banner_Le_Cong_Vinh.jpg' style='width: 100%; height: 396px;' alt="">
+								<div class="text"></div>
+								</a>
+							</div>
+						
+							<div class="mySlides fade">
+								<a href="./vanhoc/conchimxanh...bandacbiet.html">
+								<img  src='../pic/banner/Banner_Nguyen_Nhat_Anh.png' style='width: 100%; height: 396px;' alt="">
+								<div class="text"></div>
+								</a>
+							</div>
+						
+							<div class="mySlides fade">
+								<a href="./kynangsong/NhanSoHoc.html">
+								<img  src='../pic/banner/Banner_Nhan_So_Hoc.jpg' style='width: 100%; height: 396px;' alt="">
+								<div class="text"></div>
+								</a>
+							</div>
+						
+							<div class="mySlides fade">
+								<a href="#">
+								<img  src='../pic/banner/Banner_Zalopay.jpg' style='width: 100%; height: 396px;' alt="">
+								<div class="text"></div>
+								</a>
+							</div>
+						</div>
+						<a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+						<a class="next" onclick='plusSlides(1)'>&#10095;</a>	
+					</div>
+					<br/>
+					<div class="position-dot">
+						<span class="dot" onclick='currentSlide(1)'></span>
+						<span class="dot" onclick='currentSlide(2)'></span>
+						<span class="dot" onclick='currentSlide(3)'></span>
+						<span class="dot" onclick='currentSlide(4)'></span>
+					</div>
+					<script type="text/javascript" src="../javascript/banner.js"></script>
+				</div>
+				<div class="small-banner">
+					<img id="small-banner-1" src="../pic/banner/sansale.jpg" alt="">
+					<img id="small-banner-2" src="../pic/banner/nhapcode.jpg" alt="">
+					<img id="small-banner-3" src="../pic/banner/freeship.jpg" alt="">
+				</div>
+				<!--sach noi bat cua sach moi-->
+				<div class="featured">
+					<div class="featured-book-title">
+						<p>Sách Mới Của Tác Giả Nguyễn Nhật Ánh</p>
+					</div>
+					<div class="featured-book-box">
+						<div class="featured-book-item">
+							<div class="featured-book-img">
+								<a href="./vanhoc/conchimxanh...bandacbiet.html">
+									<img src="../pic/vanhoc/conchimxanhbiecbayve-bandacbiet-2.jpg" alt="">
+								</a>
+							</div>
+							<div class="featured-book-content">
+								<div class="featured-content-title">
+									<div class="featured-object-title">
+										<a href="./vanhoc/conchimxanh...bandacbiet.html" title="Con Chim Xanh Biếc Bay Về (Bìa Cứng)">Con Chim Xanh Biếc Bay Về (Bìa Cứng)</a>
+									</div>
+									<span>Nguyễn Nhật Ánh</span>
+								</div>
+								<div class="featured-content">
+									Không giống như những tác phẩm trước đây lấy bối cảnh vùng quê miền Trung 
+									đầy ắp những hoài niệm tuổi thơ dung dị, trong trẻo với các nhân vật ở độ tuổi 
+									dậy thì, trong quyển sách mới lần này nhà văn Nguyễn Nhật Ánh lấy bối cảnh 
+									chính là Sài Gòn – Thành phố Hồ Chí Minh nơi tác giả sinh sống (như là một sự 
+									đền đáp ân tình với mảnh đất miền Nam). Các nhân vật chính trong truyện 
+									cũng “lớn” hơn, với những câu chuyện mưu sinh lập nghiệp lắm gian nan thử thách 
+									của các sinh viên trẻ đầy hoài bão. Tất nhiên không thể thiếu những câu chuyện tình cảm...
+								</div>
+								<div class="box-buy-best-sale clearfix">
+									<div class="box-sale-off">-30%</div>
+									<div class="box-old-price">
+										<p>270.000đ</p>
+									</div>
+									<div class="box-now-price">
+										<p>189.900đ</p>
+									</div>
+									<div class="add-to-cart">
+										<input id="" type="submit" name="" value="Mua ngay">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--sach moi-->
+				<div class="content">
+					<div class="dear_title">
+						<h2 class="title_head_ border_title dear_title_1"><a href="">SÁCH MỚI</a></h2>
+					</div>
+					<div class="box-wapper">
+						<div class="col-item">
+							<div class="row-item">
+								<div class="row1">
+									<a href="./vanhoc/phut89.html" title="Phút 89 - Tự Truyện Lê Công Vinh">
+										<img src="../pic/sachmoi/phut89-tutruyen-lecongvinh.jpg">
+									</a>
+									<div class="percent-deal">10%</div>
+								</div>
+								<div class="row2">
+									<a href="./vanhoc/phut89.html" title="Phút 89 - Tự Truyện Lê Công Vinh">Phút 89 - Tự Truyện Lê Công Vinh</a>
+								</div>
+								<div class="row3">
+									<p>139.500đ
+										<span class="original-deal">155.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./vanhoc/conchimxanh...banthuong.html" title="Con Chim Xanh Biếc Bay Về - Nguyễn Nhật Ánh (Bìa Mềm)">
+										<img src="../pic/sachmoi/conchimxanhbiecbayve-banthuong-1.jpg">
+									</a>
+									<div class="percent-deal">50%</div>
+								</div>
+								<div class="row2">
+									<a href="./vanhoc/conchimxanh...banthuong.html" title="Con Chim Xanh Biếc Bay Về - Nguyễn Nhật Ánh (Bìa Mềm)">Con Chim Xanh Biếc Bay Về - Nguyễn Nhật Ánh (Bìa Mềm)</a>
+								</div>
+								<div class="row3">
+									<p>75.000đ
+										<span class="original-deal">150.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./kynangsong/NhanSoHoc.html" title="Thay Đổi Cuộc Sống Với Nhân Số Học">
+										<img src="../pic/sachmoi/thaydoicuocsongvoinhansohoc.jpg">
+									</a>
+									<div class="percent-deal">5%</div>
+								</div>
+								<div class="row2">
+									<a href="./kynangsong/NhanSoHoc.html" title="Thay Đổi Cuộc Sống Với Nhân Số Học">Thay Đổi Cuộc Sống Với Nhân Số Học</a>
+								</div>
+								<div class="row3">
+									<p>235.500đ
+										<span class="original-deal">248.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./ngoaingu/hanngu-1.html" title="Giáo Trình Hán Ngữ 1 - Tập 1 - Quyển Thượng (Phiên Bản Mới)">
+										<img src="../pic/sachmoi/hanngu-1.jpg">
+									</a>
+									<div class="percent-deal">40%</div>
+								</div>
+								<div class="row2">
+									<a href="./ngoaingu/hanngu-1.html" title="Giáo Trình Hán Ngữ 1 - Tập 1 - Quyển Thượng (Phiên Bản Mới)">Giáo Trình Hán Ngữ 1 - Tập 1 - Quyển Thượng (Phiên Bản Mới)</a>
+								</div>
+								<div class="row3">
+									<p>53.400đ
+										<span class="original-deal">89.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+						</div>
+						<div class="center-view-more">
+							<a href="./sachmoi/sachmoi.html" id="view-more-1" class="view-more">Xem thêm</a>
+						</div>
+					</div>
+				</div>
+				<!--tu khoa hot cua sach giao khoa-->
+				<div class="featured">
+					<div class="featured-book-title">
+						<p>Từ khóa HOT</p>
+					</div>
+					<div class="hot-carousel" style="max-width:1200px">
+						<div class="myCarousels">
+							<div class="owl-carousel">
+								<div class="owl-item owl-item1">Sách cấp 1</div>
+								<div class="owl-item owl-item2">Sách cấp 2</div>
+								<div class="owl-item owl-item3">Sách cấp 3</div>
+								<div class="owl-item owl-item4">Giáo trình</div>
+								<div class="owl-item owl-item5">Sách bài tập</div>
+							</div>
+						</div>
+						<div class="myCarousels">
+							<div class="owl-carousel">
+								<div class="owl-item owl-item1">Toán rời rạc</div>
+								<div class="owl-item owl-item2">Chủ nghĩa XHKH</div>
+								<div class="owl-item owl-item3">Ngôn ngữ học</div>
+								<div class="owl-item owl-item4">Kinh tế lượng</div>
+								<div class="owl-item owl-item5">Hình học 12</div>
+							</div>
+						</div>
+							<div class="crs-format" style="width:100%">
+								<div class="crs-left crs-left-right" onclick="plusDivs(-1)">&#10094;</div>
+								<div class="crs-right crs-left-right" onclick="plusDivs(1)">&#10095;</div>
+							</div>
+					</div>
+					<script type="text/javascript" src="../javascript/owl-carousel.js"></script>
+				</div>
+				<!--sach giao khoa-->
+				<div class="content">
+					<div class="dear_title">
+						<h2 class="title_head_ border_title dear_title_2"><a href="">SÁCH GIÁO KHOA</a></h2>
+					</div>
+					<div class="box-wapper">
+						<div class="col-item">
+							<div class="row-item">
+								<div class="row1">
+									<a href="./sachgiaokhoa/daoduc5.html" title="Đạo Đức Lớp 5">
+										<img src="../pic/sachgiaokhoa/daoduc5.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./sachgiaokhoa/daoduc5.html" title="Đạo Đức Lớp 5">Đạo Đức Lớp 5</a>
+								</div>
+								<div class="row3">
+									<p>3.800đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./sachgiaokhoa/hinhhoc12.html" title="Hình Học Lớp 12 (Song Ngữ Việt - Anh)">
+										<img src="../pic/sachgiaokhoa/hinhhoc12.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./sachgiaokhoa/hinhhoc12.html" title="Hình Học Lớp 12 (Song Ngữ Việt - Anh)">Hình Học Lớp 12 (Song Ngữ Việt - Anh)</a>
+								</div>
+								<div class="row3">
+									<p>25.600</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./sachgiaokhoa/toanroirac.html" title="Toán Rời Rạc Ứng Dụng Trong Tin Học">
+										<img src="../pic/sachgiaokhoa/toanroirac-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./sachgiaokhoa/toanroirac.html" title="Toán Rời Rạc Ứng Dụng Trong Tin Học">Toán Rời Rạc Ứng Dụng Trong Tin Học</a>
+								</div>
+								<div class="row3">
+									<p>98.980đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./sachgiaokhoa/ngonnguhoctv.html" title="Cơ Sở Ngôn Ngữ Học Và Tiếng Việt">
+										<img src="../pic/sachgiaokhoa/ngonnguhoctv-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./sachgiaokhoa/ngonnguhoctv.html" title="Cơ Sở Ngôn Ngữ Học Và Tiếng Việt">Cơ Sở Ngôn Ngữ Học Và Tiếng Việt</a>
+								</div>
+								<div class="row3">
+									<p>58.800đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+						</div>
+						<div class="center-view-more">
+							<a href="./sachgiaokhoa/sachgiaokhoa.html" id="view-more-2" class="view-more">Xem thêm</a>
+						</div>
+					</div>
+				</div>
+				<!--sach noi bat cua sach ngoai ngu-->
+				<div class="featured">
+					<div class="featured-book-title">
+						<p>Mindmap English Grammar</p>
+					</div>
+					<div class="foreign-book-box">
+						<div class="foreign-book-item">
+							<div class="foreign-book-content">
+								<div class="foreign-content-title">
+									<div class="foreign-object-title">
+										<a href="./ngoaingu/mindmap.html" title="Mindmap English Grammar - Ngữ Pháp Tiếng Anh Bằng Sơ Đồ Tư Duy">Mindmap English Grammar - Ngữ Pháp Tiếng Anh Bằng Sơ Đồ Tư Duy</a>
+									</div>
+									<span>Đỗ Nhung (Chủ biên) - Thanh Hà</span>
+								</div>
+								<div class="foreign-content">
+									Cuốn sách Mindmap English Grammar – Ngữ pháp tiếng Anh bằng sơ đồ tư duy giúp bạn học tiếng Anh dựa trên 
+									phương pháp ghi nhớ nổi tiếng trên thế giới – Sơ đồ tư duy (Mindmap).<br>
+									Phương pháp này được phát hiện vào cuối thập niên 60 của thế kỉ 20 bởi Tony Bugan. Sơ đồ tư duy được mệnh danh 
+									là “công cụ vạn năng cho bộ não – một phương pháp trình bày ý tưởng, kiến thức bằng những từ khóa chính, hình ảnh và màu sắc, giúp não bị 
+									phát huy tối đa khả năng ghi nhỏ. Phương pháp này hiện đang được hơn 250 triệu người trên thế giới sử dụng, đã và đang đem lại 
+									những hiệu quả thực sự, nhất là trong lĩnh vực giáo dục.<br>
+									Với những ưu điểm của phương pháp trên, cuốn Mindmap English Grammar cung cấp toàn bộ kiến thức 
+									ngữ pháp tiếng Anh căn bản đã được hệ thống dưới dạng những sơ đồ tư duy linh động.
+									
+								</div>
+								<div class="foreign-box-buy-best-sale clearfix">
+									<div class="foreign-box-sale-off">-40%</div>
+									<div class="foreign-box-old-price">
+										<p>190.000đ</p>
+									</div>
+									<div class="foreign-box-now-price">
+										<p>114.000đ</p>
+									</div>
+									<div class="foreign-add-to-cart">
+										<input id="" type="submit" name="" value="Mua ngay">
+									</div>
+								</div>
+							</div>
+							<div class="foreign-book-img">
+								<a href="./ngoaingu/mindmap.html">
+									<img src="../pic/ngoaingu/mindmap.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--sach ngoai ngu-->
+				<div class="content">
+					<div class="dear_title">
+						<h2 class="title_head_ border_title dear_title_3"><a href="">SÁCH NGOẠI NGỮ</a></h2>
+					</div>
+					<div class="box-wapper">
+						<div class="col-item">
+							<div class="row-item">
+								<div class="row1">
+									<a href="./ngoaingu/30chude-1.html" title="30 Chủ Đề Từ Vựng Tiếng Anh (Tập 2)">
+										<img src="../pic/ngoaingu/30chude-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./ngoaingu/30chude-1.html" title="30 Chủ Đề Từ Vựng Tiếng Anh (Tập 2)">30 Chủ Đề Từ Vựng Tiếng Anh (Tập 2)</a>
+								</div>
+								<div class="row3">
+									<p>36.000đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./ngoaingu/camnang-1.html" title="Cẩm Nang Cấu Trúc Tiếng Anh">
+										<img src="../pic/ngoaingu/camnang-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./ngoaingu/camnang-1.html" title="Cẩm Nang Cấu Trúc Tiếng Anh">Cẩm Nang Cấu Trúc Tiếng Anh</a>
+								</div>
+								<div class="row3">
+									<p>53.000đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./ngoaingu/hannguduongchau.html" title="Giáo trình Hán ngữ 1 + 2 - Phiên bản tiếng Trung Dương Châu">
+										<img src="../pic/ngoaingu/hannguduongchau-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./ngoaingu/hannguduongchau.html" title="Giáo trình Hán ngữ 1 + 2 - Phiên bản tiếng Trung Dương Châu">Giáo trình Hán ngữ 1 + 2 - Phiên bản tiếng Trung Dương Châu</a>
+								</div>
+								<div class="row3">
+									<p>250.000đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./ngoaingu/tiengnhat-1.html" title="Bộ Đề Luyện Thi Năng Lực Tiếng Nhật N3 - Kanji Từ Vựng">
+									<img src="../pic/ngoaingu/bodetiengnhat.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./ngoaingu/tiengnhat-1.html" title="Bộ Đề Luyện Thi Năng Lực Tiếng Nhật N3 - Kanji Từ Vựng">Bộ Đề Luyện Thi Năng Lực Tiếng Nhật N3 - Kanji Từ Vựng</a>
+								</div>
+								<div class="row3">
+									<p>44.700đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+						</div>
+						<div class="center-view-more">
+							<a href="./ngoaingu/ngoaingu.html" id="view-more-3" class="view-more">Xem thêm</a>
+						</div>
+					</div>
+				</div>
+				<!--sach noi bat cua sach van hoc-->
+				<div class="featured">
+					<div class="featured-book-title">
+						<p>BTS & A.R.M.Y Thời Khắc Tươi Đẹp Nhất Chúng Ta Có Nhau</p>
+					</div>
+					<div class="literature-book-box">
+						<div class="literature-book-item">
+							<div class="literature-book-img">
+								<a href="./vanhoc/BTS-1.html">
+									<img src="../pic/vanhoc/BTS-2.jpg" alt="">
+								</a>
+							</div>
+							<div class="literature-book-content">
+								<div class="literature-content-title">
+									<div class="literature-object-title">
+										<a href="./vanhoc/BTS-1.html" title="BTS & A.R.M.Y Thời Khắc Tươi Đẹp Nhất Chúng Ta Có Nhau">BTS & A.R.M.Y Thời Khắc Tươi Đẹp Nhất Chúng Ta Có Nhau</a>
+									</div>
+									<span>Lee Jeeheng</span>
+								</div>
+								<div class="literature-content">
+									Lần đầu tiên có một cuốn sách ý nghĩa viết về BTS & A.R.M.Y – cặp bài trùng song hành 
+									và cùng nhau tạo nên những khoảnh khắc lịch sử khiến cả thế giới phải trầm trồ ngưỡng mộ.<br>
+									Được chắp bút bởi Lee Jeeheng – tiến sĩ khối điện ảnh chuyên ngành lý luận điện ảnh của 
+									Viện cao học về Khoa học hình ảnh tiên tiến, đa phương tiện và phim ảnh thuộc Trường Đại học Chungang.
+								</div>
+								<div class="lit-box-buy-best-sale lit-clearfix">
+									<div class="lit-box-sale-off">-15%</div>
+									<div class="lit-box-old-price">
+										<p>98.000đ</p>
+									</div>
+									<div class="lit-box-now-price">
+										<p>83.300đ</p>
+									</div>
+									<div class="lit-add-to-cart">
+										<input id="" type="submit" name="" value="Mua ngay">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--sach van hoc-->
+				<div class="content">
+					<div class="dear_title">
+						<h2 class="title_head_ border_title dear_title_4"><a href="">SÁCH VĂN HỌC</a></h2>
+					</div>
+					<div class="box-wapper">
+						<div class="col-item">
+							<div class="row-item">
+								<div class="row1">
+									<a href="./vanhoc/tatden.html" title="Danh Tác Việt Nam - Tắt Đèn (Tái Bản)">
+										<img src="../pic/vanhoc/tatden.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./vanhoc/tatden.html" title="Danh Tác Việt Nam - Tắt Đèn (Tái Bản)">Danh Tác Việt Nam - Tắt Đèn (Tái Bản)</a>
+								</div>
+								<div class="row3">
+									<p>33.600đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./vanhoc/catbuichanai.html" title="Cát Bụi Chân Ai (Tái Bản)">
+										<img src="../pic/vanhoc/catbuichanai.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./vanhoc/catbuichanai.html" title="Cát Bụi Chân Ai (Tái Bản)">Cát Bụi Chân Ai (Tái Bản)</a>
+								</div>
+								<div class="row3">
+									<p>156.500đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./vanhoc/BTS-4.html" title="BTS Ước Mơ Không Chờ Đợi Ai (Sách Tặng Kèm Bộ Postcard CD BTS)">
+										<img src="../pic/vanhoc/BTS-4.jpg">
+									</a>
+									<div class="percent-deal">34%</div>
+								</div>
+								<div class="row2">
+									<a href="./vanhoc/BTS-4.html" title="BTS Ước Mơ Không Chờ Đợi Ai (Sách Tặng Kèm Bộ Postcard CD BTS)">BTS Ước Mơ Không Chờ Đợi Ai (Sách Tặng Kèm Bộ Postcard CD BTS)</a>
+								</div>
+								<div class="row3">
+									<p>110.700đ
+										<span class="original-deal">169.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./vanhoc/toidamthachthucthoigian.html" title="Tôi Dám Thách Thức Với Thời Gian">
+										<img src="../pic/vanhoc/toidamthachthucthoigian.jpg">
+									</a>
+									<div class="percent-deal">30%</div>
+								</div>
+								<div class="row2">
+									<a href="./vanhoc/toidamthachthucthoigian.html" title="Tôi Dám Thách Thức Với Thời Gian">Tôi Dám Thách Thức Với Thời Gian</a>
+								</div>
+								<div class="row3">
+									<p>101.400đ
+										<span class="original-deal">145.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+						</div>
+						<div class="center-view-more">
+							<a href="./vanhoc/vanhoc.html" id="view-more-4" class="view-more">Xem thêm</a>
+						</div>
+					</div>
+				</div>
+				<!--banner ky nang song-->
+				<div class="banner-skills">
+					<a href="./kynangsong/laptrinhhanhphuc.html">
+						<img id="banner-skills-1" src="../pic/banner/Banner_Lap_trinh_hanh_phuc_590x200px.jpg" alt="">
+					</a>
+					<a href="./kynangsong/khongioihan.html">
+						<img id="banner-skills-2" src="../pic/banner/Banner_Tro_ve_Khong_590x200px.jpg" alt="">
+					</a>
+				</div>
+				<!--ky nang song-->
+				<div class="content">
+					<div class="dear_title">
+						<h2 class="title_head_ border_title dear_title_5"><a href="">KỸ NĂNG SỐNG</a></h2>
+					</div>
+					<div class="box-wapper">
+						<div class="col-item">
+							<div class="row-item">
+								<div class="row1">
+									<a href="./kynangsong/5NgonNguTinhYeu.html" title="5 Ngôn Ngữ Tình yêu (Tái Bản)">
+										<img src="../pic/kynangsong/5love-1.jpg">
+									</a>
+									<div class="percent-deal">19%</div>
+								</div>
+								<div class="row2">
+									<a href="./kynangsong/5NgonNguTinhYeu.html" title="5 Ngôn Ngữ Tình Yêu (Tái Bản)">5 Ngôn Ngữ Tình yêu (Tái Bản)</a>
+								</div>
+								<div class="row3">
+									<p>62.900đ
+										<span class="original-deal">78.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./kynangsong/101DieuTruongHoc.html" title="101 Điều Trường Học Chưa Bao Giờ Dạy Bạn">
+										<img src="../pic/kynangsong/101-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./kynangsong/101DieuTruongHoc.html" title="101 Điều Trường Học Chưa Bao Giờ Dạy Bạn">101 Điều Trường Học Chưa Bao Giờ Dạy Bạn</a>
+								</div>
+								<div class="row3">
+									<p>82.100đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./kynangsong/BanDatGiaBaoNhieu.html" title="Bạn Đắt Giá Bao Nhiêu?">
+										<img src="../pic/kynangsong/bandatgia-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./kynangsong/BanDatGiaBaoNhieu.html" title="Bạn Đắt Giá Bao Nhiêu?">Bạn Đắt Giá Bao Nhiêu?</a>
+								</div>
+								<div class="row3">
+									<p>62.400đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./kynangsong/dacnhantam.html" title="Đắc Nhân Tâm (Bìa Cứng) - Tái Bản">
+									<img src="../pic/kynangsong/dacnhantam-1.jpg">
+									</a>
+									<div class="percent-deal">32%</div>
+								</div>
+								<div class="row2">
+									<a href="./kynangsong/dacnhantam.html" title="Đắc Nhân Tâm (Bìa Cứng) - Tái Bản">Đắc Nhân Tâm (Bìa Cứng) - Tái Bản</a>
+								</div>
+								<div class="row3">
+									<p>66.900đ
+										<span class="original-deal">98.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+						</div>
+						<div class="center-view-more">
+							<a href="./kynangsong/kynangsong.html" id="view-more-5" class="view-more">Xem thêm</a>
+						</div>
+					</div>
+				</div>
+				<!--banner truyen tranh-->
+				<div class="banner-comic">
+					<a href="./truyentranh/cobequangkhando.html">
+						<img src="../pic/banner/Banner-sachchieubong.jpg" alt="">
+					</a>
+				</div>
+				<!--truyen tranh-->
+				<div class="content">
+					<div class="dear_title">
+						<h2 class="title_head_ border_title dear_title_6"><a href="">TRUYỆN TRANH</a></h2>
+					</div>
+					<div class="box-wapper">
+						<div class="col-item">
+							<div class="row-item">
+								<div class="row1">
+									<a href="./truyentranh/Conan.html" title="Thám Tử Lừng Danh Conan - Hanzawa - Chàng Hung Thủ Số Nhọ - Tập 1">
+									<img src="../pic/truyentranh/conan1-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./truyentranh/Conan.html" title="Thám Tử Lừng Danh Conan - Hanzawa - Chàng Hung Thủ Số Nhọ - Tập 1">Thám Tử Lừng Danh Conan - Hanzawa - Chàng Hung Thủ Số Nhọ - Tập 1</a>
+								</div>
+								<div class="row3">
+									<p>25.000đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./truyentranh/Gragonball.html" title="Dragon Ball Full Color - Phần Một: Thời Niên Thiếu Của Son Goku - Tập 6">
+									<img src="../pic/truyentranh/dragonball-1.jpg">
+									</a>
+									<div class="percent-deal">19%</div>
+								</div>
+								<div class="row2">
+									<a href="./truyentranh/Gragonball.html" title="Dragon Ball Full Color - Phần Một: Thời Niên Thiếu Của Son Goku - Tập 6">Dragon Ball Full Color - Phần Một: Thời Niên Thiếu Của Son Goku - Tập 6</a>
+								</div>
+								<div class="row3">
+									<p>62.000đ
+										<span class="original-deal">77.000đ</span>
+									</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./truyentranh/HocVienThamTuQ17.html" title="Học Viện Thám Tử Q 17">
+										<img src="../pic/truyentranh/hocvienthamtu-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./truyentranh/HocVienThamTuQ17.html" title="Học Viện Thám Tử Q 17">Học Viện Thám Tử Q 17</a>
+								</div>
+								<div class="row3">
+									<p>25.000đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+							<div class="row-item">
+								<div class="row1">
+									<a href="./truyentranh/Yaiba.html" title="Yaiba - Tập 8">
+									<img src="../pic/truyentranh/yaiba-1.jpg">
+									</a>
+								</div>
+								<div class="row2">
+									<a href="./truyentranh/Yaiba.html" title="Yaiba - Tập 8">Yaiba - Tập 8</a>
+								</div>
+								<div class="row3">
+									<p>22.000đ</p>
+								</div>
+								<div class="row4">
+									<button class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+						</div>
+						<div class="center-view-more">
+							<a href="./truyentranh/truyentranh.html" id="view-more-6" class="view-more">Xem thêm</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="myScroll" title="Go to top">&#11165;</button>
+	<script type="text/javascript" src="../javascript/scroll_to_top.js"></script>
+	<div class="znewsletter">
+		<div class="wrapper_newsletter">
+			<div class="newsletter">
+				<div class="newsletter-icon">
+					<img src="../pic/frontend/thanhtoan/newsletter.svg" width="163px" alt="">
+				</div>
+				<div class="newsletter-desdription">
+					<h3>Đăng ký nhận bản tin DoubleT</h3>
+					<h5>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h5>
+				</div>
+				<div class="newsletter-form">
+					<input class="youremail" type="email" placeholder="Địa chỉ email của bạn" value="">
+					<input class="dangkyemail" type="button" onclick="In()" value="Đăng ký">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--footer-->
+	<div class="zfooter">
+		<div class="wapper">
+			<div class="footer">
+				<div class="foo">
+					<div class="foo-item foo-item1">
+						<div class="pad-fooitem1">
+							<div class="flogo">
+								<div class="llogo">
+									<img src="../pic/logo/favilogo.png" alt="">
+								</div>
+								<div class="rlogo">Công ty Cổ phần DoubleT Bookstore
+								</div>
+							</div>
+							<span><h4>THÔNG TIN LIÊN LẠC</h4></span>
+							<p>
+								<i class="fas fa-home"></i> 828 Sư Vạn Hạnh, Q10, TPHCM.
+								<span><i class="fas fa-envelope"></i> doublet@gmail.com</span>
+								<i class="fas fa-phone"></i> 0934048758
+								<span><i class="fas fa-phone"></i> 0384410932</span>
+							</p>
+						</div>
+					</div>
+					<div class="foo-item foo-item2">
+						<div class="pad-fooitem2">
+							<h4>PHƯƠNG THỨC THANH TOÁN</h4>
+							<p>
+								<img src="../pic/frontend/thanhtoan/visa.svg">
+								<img src="../pic/frontend/thanhtoan/mastercard.svg">
+								<img src="../pic/frontend/thanhtoan/jcb.svg">
+								<span><img src="../pic/frontend/thanhtoan/cash.svg">
+								<img src="../pic/frontend/thanhtoan/internet-banking.svg">
+								<img src="../pic/frontend/thanhtoan/installment.svg"></span>
+							</p>
+						</div>
+					</div>
+					<div class="foo-item foo-item3">
+						<div class="pad-fooitem3">
+							<h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+							<p>
+								<a href="">
+									<i class="fab fa-facebook fa-3x"></i>
+								</a>
+								<a href="">
+									<i class="fab fa-youtube fa-3x"></i>
+								</a>
+								<a href="">
+									<i class="fab fa-instagram fa-3x color-ig"></i>
+								</a>
+							</p>
+							<h4>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</h4>
+							<p>
+								<img src="../pic/ungdung/appstore.png" width="140px">
+								<span><img src="../pic/ungdung/playstore.png" width="140px"></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="zcopy">
+		<div class="wapper">
+			<div class="copy" id="fcopy">© 2020 Copyright:
+				<a href="./index.html">DoubleT.com</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

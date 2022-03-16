@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Động Vật Hoang Dã - Sách Chiếu Bóng / New</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/trangsanpham.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dangnhap_dangky.css">
+    <script type="text/javascript" src="../../javascript/app.js"></script>
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="../../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="zheader">
+        <div class="wapper">
+            <div class="header">
+                <div id="menu">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn fas fa-bars fa-2x"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="../sachmoi/sachmoi.html">Sách mới</a>
+                            <a href="../sachgiaokhoa/sachgiaokhoa.html">Sách giáo khoa</a>
+                            <a href="../ngoaingu/ngoaingu.html">Sách ngoại ngữ</a>
+                            <a href="../vanhoc/vanhoc.html">Sách văn học</a>
+                            <a href="../kynangsong/kynangsong.html">Kỹ năng sống</a>
+                            <a href="../truyentranh/truyentranh.html">Truyện tranh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <form action="" method="">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    </form>
+                </div>
+                <div class="isearch">
+                    <a href=""><i class="fas fa-search"></i></a>
+                </div>
+                <div id="logo">
+                    <a href="../index.html">
+                        <img src="../../pic/logo/logo.png" width="200px" height="200px">
+                    </a>
+                </div>
+
+                <!--đăng nhập, đăng ký-->
+                <div class="hopUser">
+                    <div id="myUser" class="myUser"><i class="far fa-user fa-2x"></i></div>
+                    <div id="myModal" class="hopthoai">
+                        <div class="modalCnt">
+                        <span class="close">&times;</span>
+                            <div class="container" id="container">
+                                <div class="form-container sign-up-container">
+                                    <form action="#">
+                                        <h1>Tạo tài khoản</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng email của bạn để đăng ký</span>
+                                        <input type="text" placeholder="Tên" />
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <button>Sign Up</button>
+                                    </form>
+                                </div>
+                                <div class="form-container sign-in-container">
+                                    <form action="#">
+                                        <h1>Đăng nhập</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng tài khoản của bạn</span>
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <a href="#">Bạn quên mật khẩu?</a>
+                                        <button>Đăng nhập</button>
+                                    </form>
+                                </div>
+                                <div class="overlay-container">
+                                    <div class="overlay">
+                                        <div class="overlay-panel overlay-left">
+                                            <h1>Đăng nhập</h1>
+                                            <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signIn">Đăng nhập</button>
+                                        </div>
+                                        <div class="overlay-panel overlay-right">
+                                            <h1>Đăng ký</h1>
+                                            <p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signUp">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="../../javascript/signIn_signUp.js"></script>
+
+                <div id="buy">
+                    <a href="">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zmain">
+        <div class="wapper">
+            <div class="main">
+                <div class="noidungtrang">
+                    <div class="linktrang">
+                        <ul>
+                            <li><a class="linktrang1" href="../index.html">Trang chủ</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1" href="./truyentranh.html">Truyện tranh</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1 chonthe" href="./dongvathoangda.html">Động Vật Hoang Dã - Sách Chiếu Bóng / New</a></li>
+                        </ul>
+                    </div><br>
+                    <div class="hinh1">
+                        <div class="hinh">
+                            <img src="../../pic/truyentranh/dong-vat-hoang-da.jpg" alt="">
+                        </div>
+                        <div class="nd1">
+                            <div class="tsach">Động Vật Hoang Dã - Sách Chiếu Bóng / New</div>
+                            <!--gia sach-->
+                            <div class="left ">
+                                <br>
+                                <div class="gsach">
+                                    <span class="giaban">93.900 <span class="dong">đ</span></span>
+                                    <span class="gsachgoc"> 126.000<span class="dong">đ</span></span>
+                                    <span class="giamgia">25%</span>
+                                </div>
+        
+                                <div class="ghang">
+                                    <p>Bạn hãy <a href="#"> NHẬP ĐỊA CHỈ</a> nhận hàng để được dự báo thời gian & chi
+                                        phí giao hàng một cách chính xác nhất</p>
+                                </div> <br>
+        
+                                <div>Số lượng:</div>
+                                <div class="input-group">
+                                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                                </div>
+                                <script src="../../javascript/hop_so_luong.js"></script>
+                                <input class="buy" type="button" name="buy" value="Chọn mua">
+                            </div>
+                            <!--cam ket -->
+                            <div class="left">
+                                <div class="b1">
+                                    <div class="b2">
+                                        <p>Cam kết chính hiệu bởi</p>
+                                        <div class="block">
+                                            <div class="left">
+                                                <img src="../../pic/logo/favilogo.png" class="logob">
+                                            </div>
+                                            <div class="left">
+                                                <a href="#" class="b4">DOUBLE T</a>
+                                                <a href="#" class="b5">Xem shop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b3">
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/compensation.svg">
+                                            Hoàn tiền <br> 111% <br> nếu giả
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/guarantee.svg">
+                                            Mở hộp <br> kiểm tra <br> nhận hàng
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/refund.svg">
+                                            Đổi trả trong <br> 30 ngày <br> nếu sp lỗi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--noi dung sach-->
+                <div class="noidung">
+                    <!--bentrai-->
+                    <div class="bentrai">
+                        <!-- info sach-->
+                        <div class="info3">
+                            <h2>Thông tin chi tiết</h2>
+                            <div class="info4">
+                                <table>
+                                    <tr>
+                                        <td class="info1">Nhà sản xuất</td>
+                                        <td class="info2"> NXB Thanh Niên</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Ngày sản xuất</td>
+                                        <td> 04-2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Kích thước</td>
+                                        <td class="info2"> 11.3 x 17.6 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Tác giả</td>
+                                        <td>Đinh Tị</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Số trang</td>
+                                        <td class="info2">14</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div> <br>
+                        <!--Mo ta san pham-->
+                        <div class="mt-sach">
+                            <h2>Mô tả sản phẩm</h2>
+                            <div class="mt-sach1">
+                                <div class="block_mt">
+                                    <div class="mt-sach2">
+                                        <h4>Động Vật Hoang Dã - Sách Chiếu Bóng / New</h4>
+                                        <p class="js-excerpt excerpt-hidden">
+                                            Sách Tương Tác - Sách Chiếu Bóng - Cinema Book - Rạp Chiếu Phim Trong Sách - Động Vật Hoang Dã 
+                                            song ngữ Việt - Anh, có chất liệu sáng tác từ dân gian Việt Nam, với kết cấu cải tiến giúp giải 
+                                            phóng đôi bàn tay để đem lại cho độc giả một trải nghiệm đọc tiện lợi nhất, được lấy cảm hứng từ chính 
+                                            “màn đêm” vẫn luôn ẩn chứa nhiều điều sợ hãi với con trẻ. <br><br>
+                                            Bóng tối là 2 chữ ám ảnh tuổi thơ và giấc ngủ của nhiều em bé. “Mẹ ơi, đừng tắt đèn con sợ; mẹ ơi con mơ
+                                            thấy quái vật ghê lắm; mẹ ơi, đừng bỏ con lại một mình trong phòng... là câu nói chắc hẳn bố mẹ nào cũng quen tai. <br><br>
+                                            Thay vì phớt lờ, thay vì cho rằng đó là một nỗi sợ vẩn vơ khi con lớn rồi sẽ hết, chúng ta hãy tranh thủ cơ hội 
+                                            biến nỗi sợ màn đêm thành sự háo hức mỗi tối. Biến bức tường vốn chỉ có màu đen trở thành một màn chiếu phim sống động.<br><br>
+                                            Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc phương thức, địa chỉ 
+                                            giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, ...
+                                            
+                                        </p>
+                                    </div>
+                                    <a role="button" href="#" class="js-show-more">Xem Thêm Nội Dung</a>
+                                    <script src="../../javascript/show_hide.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benphai">
+                        <img src="../../pic/banner/quangcao.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+					<div class="box-wapper">
+                        <div class="khamphathem">
+                            <img src="../../pic/frontend/kham_pha_them.png" alt="" width="194px" height="24px">
+                        </div>
+						<div class="col-item">
+							<div class="row-item">
+                                <div class="row1">
+                                    <a href="" title="Thám Tử Lừng Danh Conan - Hanzawa - Chàng Hung Thủ Số Nhọ - Tập 1">
+                                        <img src="../../pic/truyentranh/conan1-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="#" title="Thám Tử Lừng Danh Conan - Hanzawa - Chàng Hung Thủ Số Nhọ - Tập 1">Thám Tử Lừng Danh Conan - Hanzawa - Chàng Hung Thủ Số Nhọ - Tập 1</a>
+                                </div>
+                                <div class="row3">
+                                    <p>25.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="#" title="Học Viện Thám Tử Q 17">
+                                        <img src="../../pic/truyentranh/hocvienthamtu-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="#" title="Học Viện Thám Tử Q 17">Học Viện Thám Tử Q 17</a>
+                                </div>
+                                <div class="row3">
+                                    <p>25.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+							<div class="row-item">
+                                <div class="row1">
+                                    <a href="#" title="Doraemon Tranh Truyện Màu - Năm 2112 Doraemon Ra Đời">
+                                        <img src="../../pic/truyentranh/doraemon2112.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="#" title="Doraemon Tranh Truyện Màu - Năm 2112 Doraemon Ra Đời">Doraemon Tranh Truyện Màu - Năm 2112 Doraemon Ra Đời</a>
+                                </div>
+                                <div class="row3">
+                                    <p>25.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="#" title="Boys Over Flowers - Con Nhà Giàu Tập 34">
+                                        <img src="../../pic/truyentranh/boys-over-flowers.jpg">
+                                    </a>
+                                    <div class="percent-deal">10%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="#" title="Boys Over Flowers - Con Nhà Giàu Tập 34">Boys Over Flowers - Con Nhà Giàu Tập 34</a>
+                                </div>
+                                <div class="row3">
+                                    <p>18.000đ
+                                        <span class="original-deal">20.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-item">
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="#" title="Yaiba - Tập 8">
+                                        <img src="../../pic/truyentranh/yaiba-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="#" title="Yaiba - Tập 8">Yaiba - Tập 8</a>
+                                </div>
+                                <div class="row3">
+                                    <p>22.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="#" title="Tsubasa - Giấc Mơ Sân Cỏ - Tập 10: Đợt Phản Công Thần Tốc">
+                                        <img src="../../pic/truyentranh/tsubasa.jpg">
+                                    </a>
+                                    <div class="percent-deal">11%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="#" title="Tsubasa - Giấc Mơ Sân Cỏ - Tập 10: Đợt Phản Công Thần Tốc">Tsubasa - Giấc Mơ Sân Cỏ - Tập 10: Đợt Phản Công Thần Tốc</a>
+                                </div>
+                                <div class="row3">
+                                    <p>17.900đ
+                                        <span class="original-deal">20.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="#" title="Cô Bé Quàng Khăn Đỏ - Sách Chiếu Bóng">
+                                        <img src="../../pic/truyentranh/co-be-quang-khan-do.jpg">
+                                    </a>
+                                    <div class="percent-deal">25%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="#" title="Cô Bé Quàng Khăn Đỏ - Sách Chiếu Bóng">Cô Bé Quàng Khăn Đỏ - Sách Chiếu Bóng</a>
+                                </div>
+                                <div class="row3">
+                                    <p>95.000đ
+                                        <span class="original-deal">126.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="../truyentranh/phuongtiengiaothong.html" title="Phương Tiện Giao Thông - Sách Chiếu Bóng">
+                                        <img src="../../pic/truyentranh/phuong-tien-giao-thong.jpg">
+                                    </a>
+                                    <div class="percent-deal">20%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="../truyentranh/phuongtiengiaothong.html" title="Phương Tiện Giao Thông - Sách Chiếu Bóng">Phương Tiện Giao Thông - Sách Chiếu Bóng</a>
+                                </div>
+                                <div class="row3">
+                                    <p>107.000đ
+                                        <span class="original-deal">126.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+						<div class="center-view-more">
+							<a href="./truyentranh.html" class="view-more">Xem thêm</a>
+						</div>
+                    </div>
+				</div>
+            </div>
+        </div>
+        <button id="myScroll" title="Go to top">&#11165;</button>
+        <script type="text/javascript" src="../../javascript/scroll_to_top.js"></script>
+        
+        <div class="znewsletter">
+            <div class="wrapper_newsletter">
+                <div class="newsletter">
+                    <div class="newsletter-icon">
+                        <img src="../../pic/frontend/thanhtoan/newsletter.svg" width="163px" alt="">
+                    </div>
+                    <div class="newsletter-desdription">
+                        <h3>Đăng ký nhận bản tin DoubleT</h3>
+                        <h5>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h5>
+                    </div>
+                    <div class="newsletter-form">
+                        <input class="youremail" type="email" placeholder="Địa chỉ email của bạn" value="">
+                        <input class="dangkyemail" type="button" onclick="In()" value="Đăng ký">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="zfooter">
+            <div class="wapper">
+                <div class="footer">
+                    <div class="foo">
+                        <div class="foo-item foo-item1">
+                            <div class="pad-fooitem1">
+                                <div class="flogo">
+                                    <div class="llogo">
+                                        <img src="../../pic/logo/favilogo.png" alt="">
+                                    </div>
+                                    <div class="rlogo">Công ty Cổ phần DoubleT Bookstore
+                                    </div>
+                                </div>
+                                <span><h4>THÔNG TIN LIÊN LẠC</h4></span>
+                                <p>
+                                    <i class="fas fa-home"></i> 828 Sư Vạn Hạnh, Q10, TPHCM.
+                                    <span><i class="fas fa-envelope"></i> doublet@gmail.com</span>
+                                    <i class="fas fa-phone"></i> 0934048758
+                                    <span><i class="fas fa-phone"></i> 0384410932</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item2">
+                            <div class="pad-fooitem2">
+                                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                                <p>
+                                    <img src="../../pic/frontend/thanhtoan/visa.svg">
+                                    <img src="../../pic/frontend/thanhtoan/mastercard.svg">
+                                    <img src="../../pic/frontend/thanhtoan/jcb.svg">
+                                    <span><img src="../../pic/frontend/thanhtoan/cash.svg">
+                                    <img src="../../pic/frontend/thanhtoan/internet-banking.svg">
+                                    <img src="../../pic/frontend/thanhtoan/installment.svg"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item3">
+                            <div class="pad-fooitem3">
+                                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                                <p>
+                                    <a href="">
+                                        <i class="fab fa-facebook fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-instagram fa-3x color-ig"></i>
+                                    </a>
+                                </p>
+                                <h4>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</h4>
+                                <p>
+                                    <img src="../../pic/ungdung/appstore.png" width="140px">
+                                    <span><img src="../../pic/ungdung/playstore.png" width="140px"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zcopy">
+            <div class="wapper">
+                <div class="copy" id="fcopy">© 2020 Copyright:
+                    <a href="./index.html">DoubleT.com</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

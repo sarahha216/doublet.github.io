@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phút 89 - Tự Truyện Lê Công Vinh / New</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/trangsanpham.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dangnhap_dangky.css">
+    <script type="text/javascript" src="../../javascript/app.js"></script>
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="../../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="zheader">
+        <div class="wapper">
+            <div class="header">
+                <div id="menu">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn fas fa-bars fa-2x"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="../sachmoi/sachmoi.html">Sách mới</a>
+                            <a href="../sachgiaokhoa/sachgiaokhoa.html">Sách giáo khoa</a>
+                            <a href="../ngoaingu/ngoaingu.html">Sách ngoại ngữ</a>
+                            <a href="../vanhoc/vanhoc.html">Sách văn học</a>
+                            <a href="../kynangsong/kynangsong.html">Kỹ năng sống</a>
+                            <a href="../truyentranh/truyentranh.html">Truyện tranh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <form action="" method="">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    </form>
+                </div>
+                <div class="isearch">
+                    <a href=""><i class="fas fa-search"></i></a>
+                </div>
+                <div id="logo">
+                    <a href="../index.html">
+                        <img src="../../pic/logo/logo.png" width="200px" height="200px">
+                    </a>
+                </div>
+
+                <!--đăng nhập, đăng ký-->
+                <div class="hopUser">
+                    <div id="myUser" class="myUser"><i class="far fa-user fa-2x"></i></div>
+                    <div id="myModal" class="hopthoai">
+                        <div class="modalCnt">
+                        <span class="close">&times;</span>
+                            <div class="container" id="container">
+                                <div class="form-container sign-up-container">
+                                    <form action="#">
+                                        <h1>Tạo tài khoản</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng email của bạn để đăng ký</span>
+                                        <input type="text" placeholder="Tên" />
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <button>Sign Up</button>
+                                    </form>
+                                </div>
+                                <div class="form-container sign-in-container">
+                                    <form action="#">
+                                        <h1>Đăng nhập</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng tài khoản của bạn</span>
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <a href="#">Bạn quên mật khẩu?</a>
+                                        <button>Đăng nhập</button>
+                                    </form>
+                                </div>
+                                <div class="overlay-container">
+                                    <div class="overlay">
+                                        <div class="overlay-panel overlay-left">
+                                            <h1>Đăng nhập</h1>
+                                            <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signIn">Đăng nhập</button>
+                                        </div>
+                                        <div class="overlay-panel overlay-right">
+                                            <h1>Đăng ký</h1>
+                                            <p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signUp">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="../../javascript/signIn_signUp.js"></script>
+
+                <div id="buy">
+                    <a href="">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zmain">
+        <div class="wapper">
+            <div class="main">
+                <div class="noidungtrang">
+                    <div class="linktrang">
+                        <ul>
+                            <li><a class="linktrang1" href="../index.html">Trang chủ</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1" href="./vanhoc.html">Sách Văn Học</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1" href="./tieusu-hoiky.html">Tiểu Sử / Hồi Kí</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1 chonthe" href="#">Phút 89 - Tự Truyện Lê Công Vinh / New</a></li>
+                        </ul>
+                    </div><br>
+                    <div class="hinh1">
+                        <div class="hinh">
+                            <img src="../../pic/vanhoc/phut89-tutruyen-lecongvinh.jpg" alt="">
+                        </div>
+                        <div class="nd1">
+                            <div class="tsach">Phút 89 - Tự Truyện Lê Công Vinh / New</div>
+                            <!--gia sach-->
+                            <div class="left ">
+                                <br>
+                                <div class="gsach">
+                                    <span class="giaban">155.000 <span class="dong">đ</span></span>
+                                    <span class="gsachgoc">139.500 <span class="dong">đ</span></span>
+                                    <span class="giamgia">10%</span>
+                                </div>
+        
+                                <div class="ghang">
+                                    <p>Bạn hãy <a href="#"> NHẬP ĐỊA CHỈ</a> nhận hàng để được dự báo thời gian & chi
+                                        phí giao hàng một cách chính xác nhất</p>
+                                </div> <br>
+        
+                                <div>Số lượng:</div>
+                                <div class="input-group">
+                                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                                </div>
+                                <script src="../../javascript/hop_so_luong.js"></script>
+                                <input class="buy" type="button" name="buy" value="Chọn mua">
+                            </div>
+                            <!--cam ket -->
+                            <div class="left">
+                                <div class="b1">
+                                    <div class="b2">
+                                        <p>Cam kết chính hiệu bởi</p>
+                                        <div class="block">
+                                            <div class="left">
+                                                <img src="../../pic/logo/favilogo.png" class="logob">
+                                            </div>
+                                            <div class="left">
+                                                <a href="#" class="b4">DOUBLE T</a>
+                                                <a href="#" class="b5">Xem shop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b3">
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/compensation.svg">
+                                            Hoàn tiền <br> 111% <br> nếu giả
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/guarantee.svg">
+                                            Mở hộp <br> kiểm tra <br> nhận hàng
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/refund.svg">
+                                            Đổi trả trong <br> 30 ngày <br> nếu sp lỗi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--noi dung sach-->
+                <div class="noidung">
+                    <!--bentrai-->
+                    <div class="bentrai">
+                        <!-- info sach-->
+                        <div class="info3">
+                            <h2>Thông tin chi tiết</h2>
+                            <div class="info4">
+                                <table>
+                                    <tr>
+                                        <td class="info1">Nhà xuất bản</td>
+                                        <td class="info2">NXB Đà Nẵng</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Ngày sản xuất</td>
+                                        <td> 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Kích thước</td>
+                                        <td class="info2"> 13 x 20.5 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Tác giả</td>
+                                        <td>Trần Minh</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Số trang</td>
+                                        <td class="info2">300</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div> <br>
+                        <!--Mo ta san pham-->
+                        <div class="mt-sach">
+                            <h2>Mô tả sản phẩm</h2>
+                            <div class="mt-sach1">
+                                <div class="block_mt">
+                                    <div class="mt-sach2">
+                                        <h4>Phút 89 - Tự Truyện Lê Công Vinh / New</h4>
+                                        <p class="js-excerpt excerpt-hidden">
+                                            Từ một cậu bé đá bóng lưới chui háng ở Nghệ An năm nào đến chàng đến chàng trai tung đánh đầu lịch sử ấy, tôi vẫn chỉ là tôi, Lê Công Vinh của bố mẹ, anh trai của các em và là một người con của đất Nghệ An. Và khi đã khoác lên mình chiếc áo đội tuyển, trong đầu tôi không có gì ngoài hai chữ : Tổ Quốc ! – Lê Công Vinh
+                                          <br><br>  Những câu chuyện trong sách được kể bằng một giọng văn thản nhiên, không phải vì chúng không buồn, không đau, không hưng phấn ; mà dường như vì người viết ý thức được rằng trong câu chuyện ấy có bao nhiêu nét nghĩa, thì người Việt Nam đều hiểu hết. Không cần diễn giải thêm về cái nghèo, về khát vọng, về đồng tiền và miệng lưỡi thế gian với độc giả ở xứ này nữa.
+                                          <br><br>  Dù sao thì chính chúng ta đã tạo nên Lê Công Vinh.                                           
+                                          <br><br>  Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc phương thức, địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, ...
+                                    </div>
+                                    <a role="button" href="#" class="js-show-more">Xem Thêm Nội Dung</a>
+                                    <script src="../../javascript/show_hide.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benphai">
+                        <img src="../../pic/banner/quangcao.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+					<div class="box-wapper">
+                        <div class="khamphathem">
+                            <img src="../../pic/frontend/kham_pha_them.png" alt="" width="194px" height="24px">
+                        </div>
+						<div class="col-item">
+							<div class="row-item">
+                                <div class="row1">
+                                    <a href="./phut89.html" title="Phút 89 - Tự Truyện Lê Công Vinh">
+                                        <img src="../../pic/vanhoc/phut89-tutruyen-lecongvinh.jpg">
+                                    </a>
+                                    <div class="percent-deal">10%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="./phut89.html" title="Phút 89 - Tự Truyện Lê Công Vinh">Phút 89 - Tự Truyện Lê Công Vinh</a>
+                                </div>
+                                <div class="row3">
+                                    <p>139.500đ
+                                        <span class="original-deal">155.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./khihoithohoathinhkhong.html" title="Khi Hơi Thở Hóa Thinh Không (Tái Bản 2020)">
+                                        <img src="../../pic/vanhoc/khihoithohoathinhkhong.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./khihoithohoathinhkhong.html" title="Khi Hơi Thở Hóa Thinh Không (Tái Bản 2020)">Khi Hơi Thở Hóa Thinh Không (Tái Bản 2020)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>87.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./BTS-1.html" title="BTS & A.R.M.Y Thời Khắc Tươi Đẹp Nhất Chúng Ta Có Nhau">
+                                        <img src="../../pic/vanhoc/BTS-1.jpg">
+                                    </a>
+                                    <div class="percent-deal">15%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="./BTS-1.html" title="BTS & A.R.M.Y Thời Khắc Tươi Đẹp Nhất Chúng Ta Có Nhau">BTS & A.R.M.Y Thời Khắc Tươi Đẹp Nhất Chúng Ta Có Nhau</a>
+                                </div>
+                                <div class="row3">
+                                    <p>83.300đ
+                                        <span class="original-deal">98.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+							<div class="row-item">
+                                <div class="row1">
+                                    <a href="./BTS-4.html" title="BTS Ước Mơ Không Chờ Đợi Ai (Sách Tặng Kèm Bộ Postcard CD BTS)">
+                                        <img src="../../pic/vanhoc/BTS-4.jpg">
+                                    </a>
+                                    <div class="percent-deal">34%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="./BTS-4.html" title="BTS Ước Mơ Không Chờ Đợi Ai (Sách Tặng Kèm Bộ Postcard CD BTS)">BTS Ước Mơ Không Chờ Đợi Ai (Sách Tặng Kèm Bộ Postcard CD BTS)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>110.700đ
+                                        <span class="original-deal">169.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-item">
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./bienniencodon-1.html" title="Biên Niên Cô Đơn">
+                                        <img src="../../pic/vanhoc/bienniencodon-1.jpg">
+                                    </a>
+                                    <div class="percent-deal">15%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="./bienniencodon-1.html" title="Biên Niên Cô Đơn">Biên Niên Cô Đơn</a>
+                                </div>
+                                <div class="row3">
+                                    <p>84.150đ
+                                        <span class="original-deal">99.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./motmanhtrang-1.html" title="Một Mảnh Trăng (Tặng Kèm 1 Obi Và 1 Bookmark)">
+                                        <img src="../../pic/vanhoc/motmanhtrang-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./motmanhtrang-1.html" title="Một Mảnh Trăng (Tặng Kèm 1 Obi Và 1 Bookmark)">Một Mảnh Trăng (Tặng Kèm 1 Obi Và 1 Bookmark)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>74.250đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./catbuichanai.html" title="Cát Bụi Chân Ai (Tái Bản)">
+                                        <img src="../../pic/vanhoc/catbuichanai.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./catbuichanai.html" title="Cát Bụi Chân Ai (Tái Bản)">Cát Bụi Chân Ai (Tái Bản)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>156.500đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./tatden.html" title="Danh Tác Việt Nam - Tắt Đèn (Tái Bản)">
+                                        <img src="../../pic/vanhoc/tatden.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./tatden.html" title="Danh Tác Việt Nam - Tắt Đèn (Tái Bản)">Danh Tác Việt Nam - Tắt Đèn (Tái Bản)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>33.600đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+						<div class="center-view-more">
+							<a href="./phut89.html" class="view-more">Xem thêm</a>
+						</div>
+                    </div>
+				</div>
+            </div>
+        </div>
+        <button id="myScroll" title="Go to top">&#11165;</button>
+        <script type="text/javascript" src="../../javascript/scroll_to_top.js"></script>
+        
+        <div class="znewsletter">
+            <div class="wrapper_newsletter">
+                <div class="newsletter">
+                    <div class="newsletter-icon">
+                        <img src="../../pic/frontend/thanhtoan/newsletter.svg" width="163px" alt="">
+                    </div>
+                    <div class="newsletter-desdription">
+                        <h3>Đăng ký nhận bản tin DoubleT</h3>
+                        <h5>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h5>
+                    </div>
+                    <div class="newsletter-form">
+                        <input class="youremail" type="email" placeholder="Địa chỉ email của bạn" value="">
+                        <input class="dangkyemail" type="button" onclick="In()" value="Đăng ký">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="zfooter">
+            <div class="wapper">
+                <div class="footer">
+                    <div class="foo">
+                        <div class="foo-item foo-item1">
+                            <div class="pad-fooitem1">
+                                <div class="flogo">
+                                    <div class="llogo">
+                                        <img src="../../pic/logo/favilogo.png" alt="">
+                                    </div>
+                                    <div class="rlogo">Công ty Cổ phần DoubleT Bookstore
+                                    </div>
+                                </div>
+                                <span><h4>THÔNG TIN LIÊN LẠC</h4></span>
+                                <p>
+                                    <i class="fas fa-home"></i> 828 Sư Vạn Hạnh, Q10, TPHCM.
+                                    <span><i class="fas fa-envelope"></i> doublet@gmail.com</span>
+                                    <i class="fas fa-phone"></i> 0934048758
+                                    <span><i class="fas fa-phone"></i> 0384410932</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item2">
+                            <div class="pad-fooitem2">
+                                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                                <p>
+                                    <img src="../../pic/frontend/thanhtoan/visa.svg">
+                                    <img src="../../pic/frontend/thanhtoan/mastercard.svg">
+                                    <img src="../../pic/frontend/thanhtoan/jcb.svg">
+                                    <span><img src="../../pic/frontend/thanhtoan/cash.svg">
+                                    <img src="../../pic/frontend/thanhtoan/internet-banking.svg">
+                                    <img src="../../pic/frontend/thanhtoan/installment.svg"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item3">
+                            <div class="pad-fooitem3">
+                                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                                <p>
+                                    <a href="">
+                                        <i class="fab fa-facebook fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-instagram fa-3x color-ig"></i>
+                                    </a>
+                                </p>
+                                <h4>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</h4>
+                                <p>
+                                    <img src="../../pic/ungdung/appstore.png" width="140px">
+                                    <span><img src="../../pic/ungdung/playstore.png" width="140px"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zcopy">
+            <div class="wapper">
+                <div class="copy" id="fcopy">© 2020 Copyright:
+                    <a href="./index.html">DoubleT.com</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

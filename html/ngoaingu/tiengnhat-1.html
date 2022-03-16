@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới) / New</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/trangsanpham.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dangnhap_dangky.css">
+    <script type="text/javascript" src="../../javascript/app.js"></script>
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="../../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="zheader">
+        <div class="wapper">
+            <div class="header">
+                <div id="menu">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn fas fa-bars fa-2x"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="../sachmoi/sachmoi.html">Sách mới</a>
+                            <a href="../sachgiaokhoa/sachgiaokhoa.html">Sách giáo khoa</a>
+                            <a href="../ngoaingu/ngoaingu.html">Sách ngoại ngữ</a>
+                            <a href="../vanhoc/vanhoc.html">Sách văn học</a>
+                            <a href="../kynangsong/kynangsong.html">Kỹ năng sống</a>
+                            <a href="../truyentranh/truyentranh.html">Truyện tranh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <form action="" method="">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    </form>
+                </div>
+                <div class="isearch">
+                    <a href=""><i class="fas fa-search"></i></a>
+                </div>
+                <div id="logo">
+                    <a href="../index.html">
+                        <img src="../../pic/logo/logo.png" width="200px" height="200px">
+                    </a>
+                </div>
+
+                <!--đăng nhập, đăng ký-->
+                <div class="hopUser">
+                    <div id="myUser" class="myUser"><i class="far fa-user fa-2x"></i></div>
+                    <div id="myModal" class="hopthoai">
+                        <div class="modalCnt">
+                        <span class="close">&times;</span>
+                            <div class="container" id="container">
+                                <div class="form-container sign-up-container">
+                                    <form action="#">
+                                        <h1>Tạo tài khoản</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng email của bạn để đăng ký</span>
+                                        <input type="text" placeholder="Tên" />
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <button>Sign Up</button>
+                                    </form>
+                                </div>
+                                <div class="form-container sign-in-container">
+                                    <form action="#">
+                                        <h1>Đăng nhập</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <span>hoặc sử dụng tài khoản của bạn</span>
+                                        <input type="email" placeholder="Email" />
+                                        <input type="password" placeholder="Mật khẩu" />
+                                        <a href="#">Bạn quên mật khẩu?</a>
+                                        <button>Đăng nhập</button>
+                                    </form>
+                                </div>
+                                <div class="overlay-container">
+                                    <div class="overlay">
+                                        <div class="overlay-panel overlay-left">
+                                            <h1>Đăng nhập</h1>
+                                            <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signIn">Đăng nhập</button>
+                                        </div>
+                                        <div class="overlay-panel overlay-right">
+                                            <h1>Đăng ký</h1>
+                                            <p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                                            <button class="ghost" id="signUp">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="../../javascript/signIn_signUp.js"></script>
+
+                <div id="buy">
+                    <a href="">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zmain">
+        <div class="wapper">
+            <div class="main">
+                <div class="noidungtrang">
+                    <div class="linktrang">
+                        <ul>
+                            <li><a class="linktrang1" href="../index.html">Trang chủ</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1" href="./ngoaingu.html">Sách Ngoại Ngữ</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1" href="./tiengnhat.html">Tiếng Nhật</a></li> <span class="l1"> &#10095; </span>
+                            <li><a class="linktrang1 chonthe" href="#">Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới) / New</a></li>
+                        </ul>
+                    </div><br>
+                    <div class="hinh1">
+                        <div class="hinh">
+                            <img src="../../pic/ngoaingu/tiengnhat-1.jpg" alt="">
+                        </div>
+                        <div class="nd1">
+                            <div class="tsach">Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới) / New</div>
+                            <!--gia sach-->
+                            <div class="left ">
+                                <br>
+                                <div class="gsach">
+                                    <span class="giaban">52.000<span class="dong">đ</span></span>
+                                    <span class="gsachgoc">75.000<span class="dong">đ</span></span>
+                                    <span class="giamgia">31%</span>
+                                </div>
+        
+                                <div class="ghang">
+                                    <p>Bạn hãy <a href="#"> NHẬP ĐỊA CHỈ</a> nhận hàng để được dự báo thời gian & chi
+                                        phí giao hàng một cách chính xác nhất</p>
+                                </div> <br>
+        
+                                <div>Số lượng:</div>
+                                <div class="input-group">
+                                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                                </div>
+                                <script src="../../javascript/hop_so_luong.js"></script>
+                                <input class="buy" type="button" name="buy" value="Chọn mua">
+                            </div>
+                            <!--cam ket -->
+                            <div class="left">
+                                <div class="b1">
+                                    <div class="b2">
+                                        <p>Cam kết chính hiệu bởi</p>
+                                        <div class="block">
+                                            <div class="left">
+                                                <img src="../../pic/logo/favilogo.png" class="logob">
+                                            </div>
+                                            <div class="left">
+                                                <a href="#" class="b4">DOUBLE T</a>
+                                                <a href="#" class="b5">Xem shop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b3">
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/compensation.svg">
+                                            Hoàn tiền <br> 111% <br> nếu giả
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/guarantee.svg">
+                                            Mở hộp <br> kiểm tra <br> nhận hàng
+                                        </div>
+                                        <div class="b6">
+                                            <img src="../../pic/frontend/thanhtoan/refund.svg">
+                                            Đổi trả trong <br> 30 ngày <br> nếu sp lỗi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--noi dung sach-->
+                <div class="noidung">
+                    <!--bentrai-->
+                    <div class="bentrai">
+                        <!-- info sach-->
+                        <div class="info3">
+                            <h2>Thông tin chi tiết</h2>
+                            <div class="info4">
+                                <table>
+                                    <tr>
+                                        <td class="info1">Nhà xuất bản</td>
+                                        <td class="info2">NXB Trẻ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Ngày sản xuất</td>
+                                        <td> 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Số trang</td>
+                                        <td class="info2">182</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Tác giả</td>
+                                        <td>	Zenbooks</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info1">Số trang</td>
+                                        <td class="info2">300</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div> <br>
+                        <!--Mo ta san pham-->
+                        <div class="mt-sach">
+                            <h2>Mô tả sản phẩm</h2>
+                            <div class="mt-sach1">
+                                <div class="block_mt">
+                                    <div class="mt-sach2">
+                                        <h4>Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới) / New</h4>
+                                        <p class="js-excerpt excerpt-hidden">
+                                            “Minna no Nihongo” là bộ giáo trình sơ cấp dành cho những ai muốn tìm hiểu về tiếng Nhật rất thông dụng tại Châu Á và Việt Nam.Sách gồm 2 tập với 50 bài học, mỗi bài bao gồm phần Mẫu câu, Ví dụ, Hội thoại, Luyện tập và các câu hỏi đặt ra để trả lời.
+<br><br>Bộ giáo trình này phù hợp với nhiều đối tượng: từ học sinh, sinh viên, và cả những ai muốn nắm chắc kiến thức cơ bản về tiếng Nhật để học tập và làm việc trong môi trường sử dụng tiếng Nhật. NXB Trẻ được chính thức độc quyền xuất bản bộ giáo trình “Minna no Nihongo” tại Việt Nam.
+<br><br>Sách được xuất bản với Bản tiếng Nhật và Bản dịch và giải thích ngữ pháp, nhằm đáp ứng tốt nhất nhu cầu học và dạy tiếng Nhật tại Việt Nam.
+<br><br>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc phương thức, địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, ...
+                                        </p>
+                                    </div>
+                                    <a role="button" href="#" class="js-show-more">Xem Thêm Nội Dung</a>
+                                    <script src="../../javascript/show_hide.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benphai">
+                        <img src="../../pic/banner/quangcao.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+					<div class="box-wapper">
+                        <div class="khamphathem">
+                            <img src="../../pic/frontend/kham_pha_them.png" alt="" width="194px" height="24px">
+                        </div>
+						<div class="col-item">
+							<div class="row-item">
+                                <div class="row1">
+                                    <a href="./25tienganh-1.html" title="25 Chuyên Đề Ngữ Pháp Tiếng Anh Trọng Tâm – (Tập 1)">
+                                        <img src="../../pic/ngoaingu/25tienganh-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./25tienganh-1.html" title="25 Chuyên Đề Ngữ Pháp Tiếng Anh Trọng Tâm – (Tập 1)">25 Chuyên Đề Ngữ Pháp Tiếng Anh Trọng Tâm – (Tập 1)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>60.500đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./30chude-1.html" title="30 Chủ Đề Từ Vựng Tiếng Anh (Tập 2)">
+                                        <img src="../../pic/ngoaingu/30chude-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./30chude-1.html" title="30 Chủ Đề Từ Vựng Tiếng Anh (Tập 2)">30 Chủ Đề Từ Vựng Tiếng Anh (Tập 2)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>36.000đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./camnang-1.html" title="Cẩm Nang Cấu Trúc Tiếng Anh">
+                                        <img src="../../pic/ngoaingu/camnang-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./camnang-1.html" title="Cẩm Nang Cấu Trúc Tiếng Anh">Cẩm Nang Cấu Trúc Tiếng Anh</a>
+                                </div>
+                                <div class="row3">
+                                    <p>53.900đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+							<div class="row-item">
+                                <div class="row1">
+                                    <a href="./mindmap.html" title="Mindmap English Grammar - Ngữ Pháp Tiếng Anh Bằng Sơ Đồ Tư Duy">
+                                        <img src="../../pic/ngoaingu/mindmap-1.jpg">
+                                    </a>
+                                    <div class="percent-deal">40%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="./mindmap.html" title="Mindmap English Grammar - Ngữ Pháp Tiếng Anh Bằng Sơ Đồ Tư Duy">Mindmap English Grammar - Ngữ Pháp Tiếng Anh Bằng Sơ Đồ Tư Duy</a>
+                                </div>
+                                <div class="row3">
+                                    <p>114.000đ
+                                        <span class="original-deal">190.00đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-item">
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./5500-1.html" title="5500 Từ Vựng Tiếng Anh Thông Dụng Nhất">
+                                        <img src="../../pic/ngoaingu/5500-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./5500-1.html" title="5500 Từ Vựng Tiếng Anh Thông Dụng Nhất">5500 Từ Vựng Tiếng Anh Thông Dụng Nhất</a>
+                                </div>
+                                <div class="row3">
+                                    <p>42.750đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./ieltslistening-1.html" title="Hackers IELTS : Listening">
+                                        <img src="../../pic/ngoaingu/ieltslistening-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./ieltslistening-1.html" title="Hackers IELTS : Listening">Hackers IELTS : Listening</a>
+                                </div>
+                                <div class="row3">
+                                    <p>110.600đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./tiengnhat-1.html" title="Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới)">
+                                        <img src="../../pic/ngoaingu/tiengnhat-1.jpg">
+                                    </a>
+                                    <div class="percent-deal">31%</div>
+                                </div>
+                                <div class="row2">
+                                    <a href="./tiengnhat-1.html" title="Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới)">Tiếng Nhật Cho Mọi Người - Sơ Cấp 1 - Bản Dịch Và Giải Thích Ngữ Pháp - Tiếng Việt (Bản Mới)</a>
+                                </div>
+                                <div class="row3">
+                                    <p>52.000đ
+                                        <span class="original-deal">75.000đ</span>
+                                    </p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="row-item">
+                                <div class="row1">
+                                    <a href="./bodetiengnhat.html" title="Bộ Đề Luyện Thi Năng Lực Tiếng Nhật N3 - Kanji Từ Vựng">
+                                        <img src="../../pic/ngoaingu/bodetiengnhat.jpg">
+                                    </a>
+                                </div>
+                                <div class="row2">
+                                    <a href="./bodetiengnhat.html" title="Bộ Đề Luyện Thi Năng Lực Tiếng Nhật N3 - Kanji Từ Vựng">Bộ Đề Luyện Thi Năng Lực Tiếng Nhật N3 - Kanji Từ Vựng</a>
+                                </div>
+                                <div class="row3">
+                                    <p>44.700đ</p>
+                                </div>
+                                <div class="row4">
+                                    <button class="btn-buynow">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+						<div class="center-view-more">
+							<a href="./kynangsong.html" class="view-more">Xem thêm</a>
+						</div>
+                    </div>
+				</div>
+            </div>
+        </div>
+        <button id="myScroll" title="Go to top">&#11165;</button>
+        <script type="text/javascript" src="../../javascript/scroll_to_top.js"></script>
+        
+        <div class="znewsletter">
+            <div class="wrapper_newsletter">
+                <div class="newsletter">
+                    <div class="newsletter-icon">
+                        <img src="../../pic/frontend/thanhtoan/newsletter.svg" width="163px" alt="">
+                    </div>
+                    <div class="newsletter-desdription">
+                        <h3>Đăng ký nhận bản tin DoubleT</h3>
+                        <h5>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h5>
+                    </div>
+                    <div class="newsletter-form">
+                        <input class="youremail" type="email" placeholder="Địa chỉ email của bạn" value="">
+                        <input class="dangkyemail" type="button" onclick="In()" value="Đăng ký">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="zfooter">
+            <div class="wapper">
+                <div class="footer">
+                    <div class="foo">
+                        <div class="foo-item foo-item1">
+                            <div class="pad-fooitem1">
+                                <div class="flogo">
+                                    <div class="llogo">
+                                        <img src="../../pic/logo/favilogo.png" alt="">
+                                    </div>
+                                    <div class="rlogo">Công ty Cổ phần DoubleT Bookstore
+                                    </div>
+                                </div>
+                                <span><h4>THÔNG TIN LIÊN LẠC</h4></span>
+                                <p>
+                                    <i class="fas fa-home"></i> 828 Sư Vạn Hạnh, Q10, TPHCM.
+                                    <span><i class="fas fa-envelope"></i> doublet@gmail.com</span>
+                                    <i class="fas fa-phone"></i> 0934048758
+                                    <span><i class="fas fa-phone"></i> 0384410932</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item2">
+                            <div class="pad-fooitem2">
+                                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                                <p>
+                                    <img src="../../pic/frontend/thanhtoan/visa.svg">
+                                    <img src="../../pic/frontend/thanhtoan/mastercard.svg">
+                                    <img src="../../pic/frontend/thanhtoan/jcb.svg">
+                                    <span><img src="../../pic/frontend/thanhtoan/cash.svg">
+                                    <img src="../../pic/frontend/thanhtoan/internet-banking.svg">
+                                    <img src="../../pic/frontend/thanhtoan/installment.svg"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foo-item foo-item3">
+                            <div class="pad-fooitem3">
+                                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                                <p>
+                                    <a href="">
+                                        <i class="fab fa-facebook fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-instagram fa-3x color-ig"></i>
+                                    </a>
+                                </p>
+                                <h4>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</h4>
+                                <p>
+                                    <img src="../../pic/ungdung/appstore.png" width="140px">
+                                    <span><img src="../../pic/ungdung/playstore.png" width="140px"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zcopy">
+            <div class="wapper">
+                <div class="copy" id="fcopy">© 2020 Copyright:
+                    <a href="./index.html">DoubleT.com</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
